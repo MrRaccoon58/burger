@@ -1,3 +1,6 @@
 @import url('/styles/colors.css');
-@import url('/styles/fonts.css');
-@import url('/test.txt');
+@import url('/fonts/fonts.css');
+
+h1 {
+    font-family: 'Lifehack';
+}
