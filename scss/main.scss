@@ -1,0 +1,18 @@
+//Config
+@import 'config/_variables';
+@import 'config/_mixins';
+
+//base
+@import 'layout/_fonts';
+@import 'layout/_base';
+@import 'layout/_ajustments';
+
+//section
+@import 'section/_start';
+@import 'section/_we';
+@import 'section/_burgers';
+@import 'section/_team';
+@import 'section/_menu';
+@import 'section/_review';
+@import 'section/_form';
+@import 'section/_contacts';

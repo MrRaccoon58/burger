@@ -1,0 +1,84 @@
+//отображение
+//текст
+//выравнивание
+
+.start {
+    background: url('../../images/1-start/bg.jpg') no-repeat;
+    background-size: cover;
+    .header {
+        width: 100%;
+        color: $white; 
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        font-family: Ubuntu;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(10px) 0;
+        
+    }
+    .start__content {
+        display: flex;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .header__logo {
+        background: url('../images/1-start/logo.png') no-repeat;
+        width: 92px;
+        height: 69px;
+
+        
+    }
+    
+    .nav {
+        // display: flex;
+    //     flex-direction: row;
+        margin-right: rem(15px);
+        .nav__item {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            &::before {
+                content: '';
+                @include circle(5px, $white);
+                margin: 0 12px;
+            }
+            &:first-child::before {
+                display: none;
+            }
+        }
+    }
+    //     margin-top: -20px;
+    //     .start__img {
+    //         flex: 1 0 auto;
+    //         max-width: 50%;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         .start__img {
+    //             width: 451px;
+    //             height: 420px;
+    //             background: url('../images/1-start/burger.png') no-repeat;
+    //             background-size: cover;
+    //         }
+    //     .start__description {
+    //         flex: 1 0 auto;
+    //         height: 420px;
+    //         max-width: 50%;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         .start__title {
+    //             color: $orange;
+    //             font-size: 72px;
+    //             font-family: 'Gagalin';
+    //         }
+    //         .start__text {
+    //             color: $white;
+    //             font-size: 65px;
+    //             font-family: 'Lifehack';
+    //         }
+    //     }
+    // }
+}

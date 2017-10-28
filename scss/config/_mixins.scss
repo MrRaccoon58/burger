@@ -1,0 +1,12 @@
+@mixin circle($size, $color) {
+    display: inline-block;
+    vertical-align: baseline;
+    width: $size;
+    height: $size;
+    border-radius: $size / 2;
+    background-color: $color;
+}
+
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
