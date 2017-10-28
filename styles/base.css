@@ -97,8 +97,52 @@ a {
 }
 
 .screen--start .content {
-  outline: 3px solid blue;
+  display: flex;
+  margin-top: -20px;
+}
+
+.screen--start .content .content__img {
   flex: 1 0 auto;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen--start .content .content__img .content__burger-img {
+  width: 451px;
+  height: 420px;
+  background: url("../images/1-start/burger.png") no-repeat;
+  background-size: cover;
+}
+
+.screen--start .content .content__description {
+  flex: 1 0 auto;
+  height: 420px;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen--start .content .content__description .content__text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0 0 7px;
+  margin-top: 40px;
+}
+
+.screen--start .content .content__description .content__h1 {
+  color: #f9b43b;
+  font-size: 72px;
+  font-family: 'Gagalin';
+}
+
+.screen--start .content .content__description .content__h2 {
+  color: #fff;
+  font-size: 65px;
+  font-family: 'Lifehack';
 }
 
 .screen--we {
