@@ -1,13 +1,16 @@
-@import url('fonts.css');
-
-h1 {
-    font-family: 'Ubuntu';
-    margin-left: 50px;
+@import url('/styles/fonts.css');
+$red: #e45028;
+$orange: #f9b43b;
+$white: #fff;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-body {
-display: flex;
-flex-direction: column;
+a {
+    text-decoration: none;
+    color: $white;
 }
 
 .screen {
@@ -20,7 +23,9 @@ flex-direction: column;
 
 .container {
     width: 940px;
+    outline: 1px solid green;
 }
+
 .screen--start {
     background: url('/images/1-start/bg.jpg') no-repeat;
     background-size: cover;
@@ -31,60 +36,93 @@ flex-direction: column;
     .header {
         height: 100px;
         display: flex;
-        .header__col-1{
+        color: $white;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        font-family: Ubuntu;
+        .header__col-1 {
             width: 92px;
-            outline: 1px solid rebeccapurple;
             display: flex;
             align-items: center;
             .header__logo {
                 width: 92px;
                 height: 69px;
                 background: url('/images/1-start/logo.png') no-repeat;
-                outline: 1px solid rebeccapurple;
             }
         }
-        .header__col-2{
-            outline: 1px solid green;
+        .header__col-2 {
             flex: 1 0 auto;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            .header__nav {
-
+            .nav {
+                display: flex;
+                flex-direction: row;
+                margin-right: 15px;
+                .nav__item {
+                    &::before {
+                        content: '•';
+                        font-size: 1rem;
+                        margin: 0 15px 0 15px;
+                    }
+                    &:first-child::before {
+                        content: '';
+                    }
+                }
             }
         }
         .header__col-3 {
-            outline: 1px solid navy;
+            display: flex;
+            align-items: center;
+            .header__order {
+                border: 1px solid $red;
+                background-color: $red;
+                border-radius: 5px;
+                padding: 10px 14px 10px 14px;
+                cursor: pointer;
+                transition: border-color .3s, background-color .3s;
+                &:hover {
+                    background-color: darken($color: $red, $amount: 10);
+                    border-color: darken($color: $red, $amount: 10);
+                }
+            }
         }
     }
     .content {
-        flex: 1 0 auto;
+        outline: 3px solid blue; // flex: 1 0 auto;
     }
 }
+
 .screen--we {
     background: url('/images/2-we/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--burgers {
     background: url('/images/3-burgers/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--team {
     background: url('/images/4-team/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--menu {
     background: url('/images/5-menu/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--review {
     background: url('/images/6-reviews/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--form {
     background: url('/images/7-form/bg.jpg') no-repeat;
     background-size: cover;
 }
+
 .screen--contacts {
     background: url('/images/8-contacts/bg.jpg') no-repeat;
     background-size: cover;
