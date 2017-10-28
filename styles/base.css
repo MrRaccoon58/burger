@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("/styles/fonts.css");
+@import url("fonts.css");
 body {
   display: flex;
   flex-direction: column;
@@ -21,11 +21,10 @@ a {
 
 .container {
   width: 940px;
-  outline: 1px solid green;
 }
 
 .screen--start {
-  background: url("/images/1-start/bg.jpg") no-repeat;
+  background: url("../images/1-start/bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -52,7 +51,7 @@ a {
 .screen--start .header .header__col-1 .header__logo {
   width: 92px;
   height: 69px;
-  background: url("/images/1-start/logo.png") no-repeat;
+  background: url("../images/1-start/logo.png") no-repeat;
 }
 
 .screen--start .header .header__col-2 {
@@ -99,40 +98,41 @@ a {
 
 .screen--start .content {
   outline: 3px solid blue;
+  flex: 1 0 auto;
 }
 
 .screen--we {
-  background: url("/images/2-we/bg.jpg") no-repeat;
+  background: url("../images/2-we/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--burgers {
-  background: url("/images/3-burgers/bg.jpg") no-repeat;
+  background: url("../images/3-burgers/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--team {
-  background: url("/images/4-team/bg.jpg") no-repeat;
+  background: url("../images/4-team/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--menu {
-  background: url("/images/5-menu/bg.jpg") no-repeat;
+  background: url("../images/5-menu/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--review {
-  background: url("/images/6-reviews/bg.jpg") no-repeat;
+  background: url("../images/6-reviews/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--form {
-  background: url("/images/7-form/bg.jpg") no-repeat;
+  background: url("../images/7-form/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .screen--contacts {
-  background: url("/images/8-contacts/bg.jpg") no-repeat;
+  background: url("../images/8-contacts/bg.jpg") no-repeat;
   background-size: cover;
 }
  
