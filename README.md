@@ -8,9 +8,4 @@
 
 **Сайт**: https://mrraccoon58.github.io/burger/
 
-
-<<<<<<< HEAD
 тест 1
-=======
-тест 2
->>>>>>> 06bfda9b8c4ec61ddb61476675dd86957af7d2fb
