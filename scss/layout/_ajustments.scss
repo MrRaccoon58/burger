@@ -45,16 +45,19 @@
 
 //кнопка заказа
 .order-link {
+    cursor: pointer;
     min-width: rem(98px);
     padding: rem(10px) rem(17px);
     border-radius: rem(5px);
     background-color: $red;
     color: $white;
     text-decoration: none;
+    text-align: center;
     font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     transition: background-color .5s;
+    text-transform: uppercase;
     &:hover {
         background-color: darken($color: $red, $amount: 10);
     }

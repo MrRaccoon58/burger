@@ -27,16 +27,16 @@
                         height: rem(97px);
                     }
                     .feature__image--meat {
-                        background-image: url('../../images/2-we/meat.png');
+                        background-image: url('../images/2-we/meat.png');
                         background-repeat: no-repeat;
                     }
                     .feature__image--hand {
-                        background-image: url('../../images/2-we/hand.png');
+                        background-image: url('../images/2-we/hand.png');
                         background-repeat: no-repeat;
                         background-position: rem(13px) 0;
                     }
                     .feature__image--natural {
-                        background-image: url('../../images/2-we/natural.png');
+                        background-image: url('../images/2-we/natural.png');
                         background-repeat: no-repeat;
                         background-position: rem(10px) rem(3px);
                     }
@@ -51,7 +51,7 @@
                         font-size: rem(14px);
                         margin-top: rem(15px);
                         text-align: center;
-                        line-height: rem(25px);
+                        line-height: rem(24px);
                     }
                 }
 

@@ -1,3 +1,82 @@
 .review {
+    .review__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        .review--1 {
+            background-image: url('../../images/6-reviews/1rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--2 {
+            background-image: url('../../images/6-reviews/2rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--3 {
+            background-image: url('../../images/6-reviews/3rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--4 {
+            background-image: url('../../images/6-reviews/4rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--5 {
+            background-image: url('../../images/6-reviews/5rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--6 {
+            background-image: url('../../images/6-reviews/6rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--7 {
+            background-image: url('../../images/6-reviews/7rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review--8 {
+            background-image: url('../../images/6-reviews/8rv.jpg');
+            background-repeat: no-repeat;
+        }
+        .review__item {
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            width: 350px;
+            height: 500px;
+            background-size: cover;
+            transition: .5s;
+            &:hover .review__list {
+                opacity: 1;
+                background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+            }
+            .review__list {
+                height: 100%;
+               padding: rem(30px);
+               transition: .5s;
+               opacity: 0;
 
+            .review__header {
+                font-size: 1.2rem;
+                color: $white;
+                margin-top: rem(35px);
+            }
+            .review__text {
+                font-weight: 300;
+                line-height: 2.5rem;
+                margin-top: rem(43px);
+                font-size: 1.2rem;
+                
+            }
+            .review__button {
+                background-color: $dark;
+                margin-top: 33px;
+                font-size: 1.1rem;
+                max-width: rem(150px);
+                &:hover {
+                    background-color: darken($color: $dark, $amount: 10);
+                }
+            } 
+            }
+        }
+    }
 }
