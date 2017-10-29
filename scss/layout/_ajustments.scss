@@ -10,6 +10,15 @@
     min-height: 650px;
 }
 
+//экран
+.section {
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .3);
+    min-width: 940px;
+    min-height: 650px;
+    }
+
+//контейнер содержимого
 .container {
     width: 940px;
     margin: 0 auto;
@@ -17,17 +26,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    outline: 1px solid red;
 } 
 
-.section {
-height: 100%;
-background-color: rgba($color: #000000, $alpha: .3);
-min-width: 940px;
-min-height: 650px;
 
+//заголовки
+.h1-title {
+    color: $orange;
+    font-size: 72px;
+    font-family: 'Gagalin';
+}
+.h2-title {
+    color: $white;
+    font-size: 65px;
+    font-family: 'Lifehack';
+    line-height: 1;
 }
 
+
+//кнопка заказа
 .order-link {
     min-width: rem(98px);
     padding: rem(10px) rem(17px);
