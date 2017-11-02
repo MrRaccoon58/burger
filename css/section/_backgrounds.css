@@ -1,0 +1,21 @@
+.burgers {
+  background: url("../images/3-burgers/bg.jpg") no-repeat;
+  background-size: contain; }
+
+.form {
+  background: url("../images/7-form/bg.jpg") no-repeat;
+  background-size: contain; }
+
+.start {
+  background: url("../images/1-start/bg.jpg") no-repeat;
+  background-size: contain; }
+
+.team {
+  background: url("../images/4-team/bg.jpg") no-repeat;
+  background-size: contain; }
+
+.we {
+  background: url("../images/2-we/bg.jpg") no-repeat;
+  background-size: contain; }
+
+

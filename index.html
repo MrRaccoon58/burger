@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <se class="wrapper">
-        <se class="maincontent">
+    <div class="wrapper">
+        <div class="maincontent">
             <section class="section start">
                 <div class="container start__container">
-                    <header class="header test">
-                        <a href="#" class="logo">
-                            <div class="header__logo">
-                                <img src="./images/1-start/logo.png" alt="логотип" class="logo__img vh">
+                    <header class="header start__header">
+                        <a href="#" class="header__logo logo">
+                            <div class="logo__img">
+                                <img src="./images/1-start/logo.png" alt="логотип" class="logo__img-inline vh">
                             </div>
                         </a>
                         <ul class="nav">
@@ -42,18 +42,22 @@
                                 <a href="#" class="nav__link">контакты</a>
                             </li>
                         </ul>
-                        <div class="header__btn">
-                            <a href="#" class="order-link">заказать</a>
+                        <div class="header__btn btn">
+                            <a href="#" class="btn__link order-link">заказать</a>
                         </div>
                     </header>
-                    <div class="start__content">
-                        <div class="start__img">
-                            <img src="./images/1-start/burger.png" alt="бургер" class="vh">
+                    <div class="start__content content">
+                        <div class="content__col content__col--1">
+                            <div class="content__img"></div>
+                            <img src="./images/1-start/burger.png" alt="бургер" class="content__img-inline vh">
                         </div>
-                        <div class="start__description">
-                            <div class="h1-title start__title">мы делаем</div>
-                            <div class="h2-title start__text">натуральные бургеры</div>
+                        <div class="content__col content__col--2 description">
+                            <div class="description__title">мы делаем</div>
+                            <div class="description__text">натуральные бургеры</div>
                         </div>
+                    </div>
+                    <div class="arrow">
+                        <a href="#" class="arrow__link"><div class="arrow__img"></div></a>
                     </div>
                 </div>
                 <div class="navbar"></div>
@@ -203,11 +207,10 @@
             </section>
             <section class="section contacts">
                 <div class="map"></div>
-                <div class="footer">
-                </div>
+                <div class="footer"></div>
             </section>
-            </div>
-            </div>
+        </div>
+    </div>
 </body>
 
 </html>
