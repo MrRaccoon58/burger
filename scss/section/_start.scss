@@ -1,59 +1,74 @@
+.test {
+    outline: 1px solid red;
+    background-color: rgba($color: #000000, $alpha: .3);
+}
+
 //отображение
 //текст
 //выравнивание
 .start {
     background: url('../images/1-start/bg.jpg') no-repeat;
     background-size: cover;
-    .header {
-        width: 100%;
-        color: $white;
-        text-transform: uppercase;
-        font-size: 0.8125rem;
-        font-family: 'Ubuntu';
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: rem(10px) 0;
+}
+
+.header {
+    width: 100%;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-family: 'Ubuntu';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(10px) 0;
+    outline: 1px solid red;
+    background-color: rgba($color: #000000, $alpha: .3);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.header__logo {
+    background: url('../images/1-start/logo.png') no-repeat;
+    width: 92px;
+    height: 69px;
+}
+
+.nav {
+    margin-right: rem(15px);
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    &::before {
+        content: '';
+        @include circle(rem(5px),
+        $white);
+        margin: 0 rem(13px);
     }
-    .logo {
-        margin-right: auto;
+    &:first-child::before {
+        display: none;
     }
-    .header__logo {
-        background: url('../images/1-start/logo.png') no-repeat;
-        width: 92px;
-        height: 69px;
-    }
-    .nav {
-        margin-right: rem(15px);
-        .nav__item {
-            display: inline-block;
-            vertical-align: middle;
-            white-space: nowrap;
-            &::before {
-                content: '';
-                @include circle(rem(5px),
-                $white);
-                margin: 0 rem(13px);
-            }
-            &:first-child::before {
-                display: none;
-            }
-        }
-    }
-    .start__content {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .start__img {
-        flex: 1 0 auto;
-        width: 451px;
-        height: 420px;
-        background: url('../images/1-start/burger.png') no-repeat;
-        background-size: cover;
-    }
-    .start__description {
-        padding: 40px 0 0 25px;
-    }
+}
+
+.start__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start__img {
+    flex: 1 0 auto;
+    width: 451px;
+    height: 420px;
+    background: url('../images/1-start/burger.png') no-repeat;
+    background-size: cover;
+}
+
+.start__description {
+    padding: 40px 0 0 25px;
 }
