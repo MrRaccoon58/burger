@@ -1,57 +1,10 @@
-    .we__container {
-        color: $dark;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        .we__header {
-            color: $dark;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        .feature {
-            max-width: rem(300px);
-            margin: 0 rem(6px) 0 rem(7px);
-            .feature__list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .feature__item {
-                    display: flex;
-                    justify-content: center;
-                    .feature__image {
-                        width: rem(97px);
-                        height: rem(97px);
-                    }
-                    .feature__image--meat {
-                        background-image: url('../images/2-we/meat.png');
-                        background-repeat: no-repeat;
-                    }
-                    .feature__image--hand {
-                        background-image: url('../images/2-we/hand.png');
-                        background-repeat: no-repeat;
-                        background-position: rem(13px) 0;
-                    }
-                    .feature__image--natural {
-                        background-image: url('../images/2-we/natural.png');
-                        background-repeat: no-repeat;
-                        background-position: rem(10px) rem(3px);
-                    }
-                    .feature__header {
-                        font-size: rem(24px);
-                        font-family: 'Lifehack';
-                        margin-top: rem(20px);
-                        text-align: center;
-                    }
-                    .feature__description {
-                        font-weight: 300;
-                        font-size: rem(14px);
-                        margin-top: rem(15px);
-                        text-align: center;
-                        line-height: rem(24px);
-                    }
-                }
-
-            }
-        }
-    }
+.we__container {
+    justify-content: space-between;
+    align-items: stretch;
+}
+.we__feature {
+    flex: 1 0 auto;
+}
+.we__title {
+    color: $dark;
+}

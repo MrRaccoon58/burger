@@ -48,8 +48,17 @@
 } 
 
 
-
-
+// заголовки
+.main-title {
+    color: $orange;
+    font-size: 72px;
+    font-family: 'Gagalin';
+}
+.oblique-title {
+    color: $white;
+    font-size: 65px;
+    font-family: 'Lifehack';
+}
 
 // //кнопка заказа
 .order-link {

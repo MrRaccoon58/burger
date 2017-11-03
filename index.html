@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section start">
+            <section class="section start" id="start">
                 <div class="container start__container">
                     <header class="header start__header">
                         <a href="#" class="header__logo logo">
@@ -24,22 +24,22 @@
                         </a>
                         <ul class="nav">
                             <li class="nav__item">
-                                <a href="#" class="nav__link">о нас</a>
+                                <a href="#we" class="nav__link">о нас</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">бургеры</a>
+                                <a href="#burgers" class="nav__link">бургеры</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">команда</a>
+                                <a href="#team" class="nav__link">команда</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">меню</a>
+                                <a href="#menu" class="nav__link">меню</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">отзывы</a>
+                                <a href="#reviews" class="nav__link">отзывы</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">контакты</a>
+                                <a href="#contacts" class="nav__link">контакты</a>
                             </li>
                         </ul>
                         <div class="header__btn btn">
@@ -57,16 +57,38 @@
                         </div>
                     </div>
                     <div class="arrow">
-                        <a href="#" class="arrow__link"><div class="arrow__img"></div></a>
+                        <a href="#we" class="arrow__link"><div class="arrow__img"></div></a>
                     </div>
                 </div>
-                <div class="navbar"></div>
             </section>
-            <section class="section we">
+            <section class="section we" id="we">
                 <div class="container we__container">
-                    <h2 class="h1-title we__header">мы лучшие</h2>
-                    <div class="feature">
+                    <div class="header we__header test">
+                        <div class="we__title main-title">Мы лучшие</div>
+                    </div>
+                    <div class="feature we__feature test">
                         <ul class="feature__list">
+                            <li class="feature__item">
+                                <div class="feature__img"></div>
+                                <div class="feature__title"></div>
+                                <div class="feature__text"></div>
+                            </li>
+                            <li class="feature__item">
+                                <div class="feature__img"></div>
+                                <div class="feature__title"></div>
+                                <div class="feature__text"></div>
+                            </li>
+                            <li class="feature__item">
+                                <div class="feature__img"></div>
+                                <div class="feature__title"></div>
+                                <div class="feature__text"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrow">
+                        <a href="#burgers" class="arrow__link"><div class="arrow__img"></div></a>
+                    </div>
+                                             <!--<ul class="feature__list">
                             <li class="feature__item feature__logo">
                                 <div class="feature__image feature__image--meat"></div>
                                 <img src="images/2-we/meat.png" alt="" class="feature__image vh">
@@ -106,20 +128,20 @@
                             <li class="feature__item">
                                 <div class="feature__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
                             </li>
-                        </ul>
-                    </div>
+                        </ul> -->
+                    
                 </div>
             </section>
-            <section class="section burgers">
+            <section class="section burgers" id="burgers">
                 <div class="container"></div>
             </section>
-            <section class="section team">
+            <section class="section team" id="team">
                 <div class="container"></div>
             </section>
-            <section class="section menu">
+            <section class="section menu" id="menu">
                 <div class="container"></div>
             </section>
-            <section class="section review">
+            <section class="section review" id="review">
                 <div class="review__container">
                     <div class="review__item review--1">
                         <ul class="review__list">
@@ -203,12 +225,13 @@
                     </div>
                 </div>
             </section>
-            <section class="section form">
+            <section class="section form" id="form">
             </section>
-            <section class="section contacts">
+            <section class="section contacts" id="contacts">
                 <div class="map"></div>
                 <div class="footer"></div>
             </section>
+            <div class="navbar"></div>
         </div>
     </div>
 </body>
