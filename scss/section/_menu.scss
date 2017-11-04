@@ -1,0 +1,44 @@
+.menu__container {
+    flex-direction: row;
+    width: 100%;
+    // align-items: stretch;
+    // justify-content: flex-end;
+    position: relative;
+}
+
+.menu__title {
+// flex: 1;
+position: absolute;
+left: rem(95px);
+top: rem(88px);
+color: $white;
+}
+
+.menu__list {
+// flex: 1;
+position: absolute;
+right: rem(-320px);
+transform: rotate(270deg);
+width: 100vh;
+}
+
+.menu__item {
+    font-size: rem(40px);
+    text-align: center;
+    padding: 20px 0;
+    color: $white;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+.menu__item--meat {
+    background: url('/images/5-menu/meat.jpg') center center no-repeat;
+    background-size: cover;
+}
+.menu__item--vegan {
+    background: url('/images/5-menu/vegan.jpg') center center no-repeat;
+    background-size: cover;
+}
+.menu__item--diet {
+    background: url('/images/5-menu/diet.jpg') center center no-repeat;
+    background-size: cover;
+}
