@@ -1,0 +1,22 @@
+// заголовки
+.section-title {
+    color: $orange;
+    font-size: 72px;
+    @include font-gagalin();
+    margin-bottom: rem(40px);
+    &_color {
+        &_dark {
+            color: $dark;
+        }
+    }
+    &_position {
+        &_center {
+            text-align: center;
+        }
+    }
+}
+.oblique-title {
+    color: $white;
+    font-size: 65px;
+    @include font-lifehack();
+}

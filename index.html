@@ -16,56 +16,118 @@
         <div class="maincontent">
             <section class="section start" id="start">
                 <div class="container start__container">
-                    <header class="header start__header">
+                    <header class="header">
                         <a href="#" class="header__logo logo">
-                            <div class="logo__img">
-                                <img src="./images/1-start/logo.png" alt="логотип" class="logo__img-inline vh">
-                            </div>
+                            <img src="./images/1-start/logo.png" alt="логотип" class="logo__img-inline">
                         </a>
-                        <ul class="nav">
-                            <li class="nav__item">
-                                <a href="#we" class="nav__link">о нас</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#burgers" class="nav__link">бургеры</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#team" class="nav__link">команда</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#menu" class="nav__link">меню</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#reviews" class="nav__link">отзывы</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contacts" class="nav__link">контакты</a>
-                            </li>
-                        </ul>
-                        <div class="header__btn btn">
-                            <a href="#" class="btn__link order-link">заказать</a>
+                        <div class="header__buttons">
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#we" class="nav__link">
+                                            о нас
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#burgers" class="nav__link">
+                                            бургеры
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#team" class="nav__link">
+                                            команда
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#menu" class="nav__link">
+                                            меню
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#reviews" class="nav__link">
+                                            отзывы
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#contacts" class="nav__link">
+                                            контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="button">
+                                заказать
+                            </a>
                         </div>
                     </header>
-                    <div class="start__content content">
-                        <div class="content__col content__col--1">
-                            <div class="content__img"></div>
-                            <img src="./images/1-start/burger.png" alt="бургер" class="content__img-inline vh">
+                    <div class="start__content">
+                        <div class="start__pic">
+                            <img class="start__pic-img" src="./images/1-start/burger.png" alt="бургер">
                         </div>
-                        <div class="content__col content__col--2 description">
-                            <div class="description__title">мы делаем</div>
-                            <div class="description__text">натуральные бургеры</div>
+                        <div class="start__text">
+                            <div class="start__title section-title">мы делаем</div>
+                            <div class="start__description">натуральные бургеры</div>
                         </div>
                     </div>
-                    <div class="arrow">
-                        <a href="#we" class="arrow__link">
-                            <div class="arrow__img"></div>
+                        <a href="#we" class="arrow">
+                            <svg class="arrow-img">
+                                <use xlink:href="../images/sprite.svg#arrow-scroll"></use>
+                            </svg>
                         </a>
-                    </div>
+
                 </div>
             </section>
-            <section class="section we" id="we">
+            <section class="section we section_centered" id="we">
                 <div class="container we__container">
-                    <div class="header we__header">
+                    <div class="section-title section-title_color_dark section-title_position_center">мы лучшие</div>
+                    <ul class="we__list">
+                        <li class="we__item">
+                            <div class="we__icon">
+                                <svg class="we__icon-img we__icon-img--meat">
+                                    <use xlink:href="/images/sprite.svg#meat"></use>
+                                </svg>
+                            </div>
+                            <div class="we__data">
+                                <div class="we__title">
+                                    100% свежее мясо
+                                </div>
+                                <div class="we__description">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="we__item">
+                            <div class="we__icon">
+                                <svg class="we__icon-img we__icon-img--hand">
+                                    <use xlink:href="/images/sprite.svg#hand"></use>
+                                </svg>
+                            </div>
+                            <div class="we__data">
+                                <div class="we__title">
+                                    Ручная сборка
+                                </div>
+                                <div class="we__description">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="we__item">
+                            <div class="we__icon">
+                                <svg class="we__icon-img we__icon-img--natural">
+                                    <use xlink:href="/images/sprite.svg#natural"></use>
+                                </svg>
+                            </div>
+                            <div class="we__data">
+                                <div class="we__title">
+                                    Натуральные ингридиенты
+                                </div>
+                                <div class="we__description">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="header we__header">
                         <div class="we__title main-title">Мы лучшие</div>
                     </div>
                     <div class="feature we__feature">
@@ -104,14 +166,14 @@
                         <a href="#burgers" class="arrow__link">
                             <div class="arrow__img"></div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section class="section burgers" id="burgers">
                 <div class="container"></div>
             </section>
             <section class="section team" id="team">
-                <div class="container team__container">
+                <!-- <div class="container team__container">
                     <div class="team__content">
                         <div class="team__title main-title">команда</div>
                         <div class="team__accordeon">
@@ -165,17 +227,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <section class="section menu" id="menu">
-                <div class="container menu__container">
+                <!-- <div class="container menu__container">
                     <div class="menu__title main-title">меню</div>
                     <ul class="menu__list">
                         <li class="menu__item menu__item--active menu__item--meat main-title">для мясоедов</li>
                         <li class="menu__item menu__item--vegan main-title">вегетерианское</li>
                         <li class="menu__item menu__item--diet main-title">диетическое</li>
                     </ul>
-                </div>
+                </div> -->
             </section>
             <section class="section review" id="reviews">
                 <div class="review__container">
@@ -335,7 +397,7 @@
                 <div class="map"></div>
                 <div class="footer"></div>
             </section>
-            <div class="navbar"></div>
+            <ul class="navbar"></ul>
         </div>
     </div>
 </body>

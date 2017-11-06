@@ -1,0 +1,17 @@
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(15px) 0;
+    border-right: rem(10px);
+    transition: .2s;
+    &:hover {
+        background: rgba($color: #fff, $alpha: .1);
+    }
+}
+
+.arrow-img {
+    width: 30px;
+    height: 15px;
+    fill: $white;
+}

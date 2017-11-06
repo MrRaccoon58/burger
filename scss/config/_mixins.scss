@@ -1,12 +1,22 @@
+
+//кружочки
 @mixin circle($size, $color) {
+    content: '';
+    vertical-align: bottom;
     display: inline-block;
-    vertical-align: baseline;
-    width: $size;
-    height: $size;
-    border-radius: $size / 2;
+    width: rem($size);
+    height: rem($size);
+    border-radius: 50%;
     background-color: $color;
 }
 
+//перевод пикселей в rem
 @function rem($px) {
     @return $px / 16px+0rem;
+}
+
+//фон 
+@mixin bg ($url) {
+    background: $dark url('../images/backgrounds/' + $url) center center no-repeat;
+    background-size: cover;
 }

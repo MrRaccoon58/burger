@@ -1,0 +1,15 @@
+.test {
+    outline: 1px solid $red;
+    background-color: rgba($color: $orange, $alpha: .3);
+    min-width: 10px;
+    min-height: 10px;
+}
+.test2 {
+    outline: 1px solid darkviolet;
+    background-color: rgba($color: azure, $alpha: .3);
+    min-width: 10px;
+    min-height: 10px;
+}
+//отображение
+//текст
+//выравнивание

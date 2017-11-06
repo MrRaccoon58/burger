@@ -1,0 +1,36 @@
+.we__list {
+display: flex;
+justify-content: space-around;
+
+}
+
+.we__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.we__data {
+    margin-top: rem(20px);
+}
+.we__title {
+    @include font-lifehack();
+    font-size: rem(24px);
+}
+.we__description {
+    margin-top: rem(20px);
+    font-size: rem(13px);
+}
+.we__icon-img {
+    width: 100px;
+    height: 100px;
+    fill: $red;
+}
+.we__icon-img--natural {
+    fill: $green;
+}
+.we__icon-img--hand {
+    fill: $orange;
+    
+}

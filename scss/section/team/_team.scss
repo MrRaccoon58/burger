@@ -1,0 +1,90 @@
+// .team__container {
+//     position: absolute;
+//     right: 0;
+//     height: 100%;
+//     width: 50%;
+//     background-color: rgba($dark, .95);
+//     flex-direction: row;
+//     align-items: stretch;
+//     justify-content: center;
+// }
+
+// .team__content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     align-items: stretch;
+    
+// }
+
+// .team__accordeon {
+//     flex-grow: 1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// .guy__header {
+//     display: flex;
+//     align-items: center;
+//     font-family: 'Gagalin';
+//     font-size: rem(14px);
+//     color: $white;
+//     &:before {
+//         content: '';
+//         display: block;
+//         width: 0;
+//         height: 0;
+//         border-left: rem(5px) solid transparent;
+//         border-right: rem(5px) solid transparent;
+//         border-bottom: rem(7px) solid $orange;
+//     }
+// }
+
+// .guy__title {
+//     margin-left: rem(10px);
+// }
+
+// .guy__body {
+//     display: flex; 
+//     margin-top: rem(10px);
+//     margin-left: rem(15px);
+//     height: 0;
+//     overflow: hidden;
+// }
+
+// .guy {
+//     margin: rem(10px) 0;
+// }
+
+// .guy--active {
+//     &>.guy__header:before {
+//         transform: rotate(180deg);
+//     }
+//     &>.guy__header {
+//         color: $orange;
+//     }
+//     &>.guy__body {
+//         height: auto;
+//         overflow: auto;
+//     }
+// }
+
+
+// .guy__img {
+//     width: rem(100px);
+//     height: rem(100px);
+//     border-radius: 50%;
+//     overflow: hidden;
+//     background: url('../images/4-team/aphex.jpg');
+//     background-position: rem(-15px) 0;
+// }
+// .guy__text {
+//     margin-left: rem(25px);
+// }
+
+// .guy__work {
+//     margin-top: rem(10px);
+//     font-size: rem(14px);
+//     font-weight: 300;
+// }

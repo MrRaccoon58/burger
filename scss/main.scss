@@ -1,19 +1,44 @@
 //Config
-@import 'config/_variables';
-@import 'config/_mixins';
+    @import 'config/_variables';
+    @import 'config/_mixins';
 
-//base
-@import 'layout/_fonts';
-@import 'layout/_base';
-@import 'layout/_ajustments';
-@import 'layout/_backgrounds';
+//layout
+    @import 'layout/_fonts';
+    @import 'layout/_base';
+    @import 'layout/_ajustments';
+
+//misc
+@import 'misc/_test';
 
 //section
-@import 'section/_start';
-@import 'section/_we';
-@import 'section/_burgers';
-@import 'section/_team';
-@import 'section/_menu';
-@import 'section/_review';
-@import 'section/_form';
-@import 'section/_contacts';
+    //common
+        @import 'section/common/_button';
+        @import 'section/common/_font-style';
+    //start
+        @import 'section/start/_start';
+        @import 'section/start/_header';
+        @import 'section/start/_content';
+        @import 'section/start/_next-arrow';
+    
+    //we
+        @import 'section/we/_we';
+        @import 'section/we/_title';
+        @import 'section/we/_features';
+
+    //burgers
+        @import 'section/burgers/_burgers';
+
+    //team
+        @import 'section/team/_team';
+
+    //menu
+        @import 'section/menu/_menu';
+
+    //review
+        @import 'section/review/_review';
+
+    //form
+        @import 'section/form/_form';
+
+    //contacts
+        @import 'section/contacts/_contacts';

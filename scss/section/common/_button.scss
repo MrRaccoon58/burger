@@ -1,0 +1,17 @@
+// //кнопка заказа
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: rem(10px) rem(15px);
+    border-radius: rem(5px);
+    background: $red;
+    color: $white;
+    text-decoration: none;
+    font-size: rem(13px);
+    font-weight: 500;
+    transition: background-color .5s;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($color: $red, $amount: 10);
+    }
+}
