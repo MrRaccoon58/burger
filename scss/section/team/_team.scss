@@ -1,3 +1,37 @@
+.team {
+    @include bg('team.jpg');
+}
+.team__container {
+    background: rgba($dark, .95);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    padding-left: rem(70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-acco__trigger {
+    color: $white;
+    display: flex;
+    align-items: center;
+    &:before {
+        content: '';
+        width: 0;
+        height: 0; 
+        border-left: rem(5px) solid transparent;
+        border-right: rem(5px) solid transparent;
+        border-top: rem(7px) solid $orange;
+    }
+}
+
+.team-acco__content {
+    display: flex;
+}
+
 // .team__container {
 //     position: absolute;
 //     right: 0;
