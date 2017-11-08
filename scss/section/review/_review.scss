@@ -10,12 +10,11 @@
     height: 50%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto 105%;
+    background-size: cover;
     transition: .2s;
     filter: grayscale(100%);
     position: relative;
     &:hover {
-        background-size: auto 110%;
         .review__hover {
             opacity: 1;
             transform: scale(1);
