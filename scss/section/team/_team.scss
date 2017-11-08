@@ -1,124 +1,99 @@
 .team {
     @include bg('team.jpg');
 }
+
 .team__container {
-    background: rgba($dark, .95);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 50%;
+    background: rgba($dark, .95);
     padding-left: rem(70px);
+    padding-top: rem(50px);
+    padding-right: rem(300px);
+    display: flex;
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.team-acco {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.team-acco__item {
+    display: flex;
+    flex-direction: column;
+    margin: rem(10px) 0;
+}
+
+.team-acco__item_active {
+    .team-acco__trigger {
+        color: $orange;
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+    .team-acco__content {
+        display: flex;
+    }
 }
 
 .team-acco__trigger {
     color: $white;
     display: flex;
     align-items: center;
+    margin-bottom: rem(10px);
+    @include font-gagalin;
     &:before {
         content: '';
         width: 0;
-        height: 0; 
+        height: 0;
         border-left: rem(5px) solid transparent;
         border-right: rem(5px) solid transparent;
         border-top: rem(7px) solid $orange;
+        margin-right: rem(10px);
     }
 }
 
 .team-acco__content {
-    display: flex;
+    display: none;
+    justify-content: space-between;
 }
 
-// .team__container {
-//     position: absolute;
-//     right: 0;
-//     height: 100%;
-//     width: 50%;
-//     background-color: rgba($dark, .95);
-//     flex-direction: row;
-//     align-items: stretch;
-//     justify-content: center;
-// }
+.team-acco__pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .25;
+}
 
-// .team__content {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: stretch;
-    
-// }
+.team-acco__pic-img {
+    background: url('/images/4-team/aphex.jpg') center center no-repeat;
+    background-size: 135%;
+    background-position: -32px 0;
+    display: block;
+    overflow: hidden; // 
+    width: 150px;height: 150px;
+    border-radius: 50%;
+}
 
-// .team__accordeon {
-//     flex-grow: 1;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
+.team-acco__text {
+    flex: .72;
+}
 
-// .guy__header {
-//     display: flex;
-//     align-items: center;
-//     font-family: 'Gagalin';
-//     font-size: rem(14px);
-//     color: $white;
-//     &:before {
-//         content: '';
-//         display: block;
-//         width: 0;
-//         height: 0;
-//         border-left: rem(5px) solid transparent;
-//         border-right: rem(5px) solid transparent;
-//         border-bottom: rem(7px) solid $orange;
-//     }
-// }
+.team-acco__text-title {
+@include font-ubuntu(bold);
+margin-bottom: rem(20px);
+}
 
-// .guy__title {
-//     margin-left: rem(10px);
-// }
-
-// .guy__body {
-//     display: flex; 
-//     margin-top: rem(10px);
-//     margin-left: rem(15px);
-//     height: 0;
-//     overflow: hidden;
-// }
-
-// .guy {
-//     margin: rem(10px) 0;
-// }
-
-// .guy--active {
-//     &>.guy__header:before {
-//         transform: rotate(180deg);
-//     }
-//     &>.guy__header {
-//         color: $orange;
-//     }
-//     &>.guy__body {
-//         height: auto;
-//         overflow: auto;
-//     }
-// }
-
-
-// .guy__img {
-//     width: rem(100px);
-//     height: rem(100px);
-//     border-radius: 50%;
-//     overflow: hidden;
-//     background: url('../images/4-team/aphex.jpg');
-//     background-position: rem(-15px) 0;
-// }
-// .guy__text {
-//     margin-left: rem(25px);
-// }
-
-// .guy__work {
-//     margin-top: rem(10px);
-//     font-size: rem(14px);
-//     font-weight: 300;
-// }
+.team-acco__text-content {
+    line-height: 2;
+}
