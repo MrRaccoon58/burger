@@ -1,12 +1,3 @@
-//контейнер содержимого
-.container {
-    margin: 0 auto;
-    position: relative;
-    max-width: 940px;
-    display: flex;
-    flex-direction: column;
-} 
-
 .wrapper {
     width: 100%;
     position: relative;
@@ -31,3 +22,12 @@
         align-items: center;
     }
 }
+
+//контейнер содержимого
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+} 

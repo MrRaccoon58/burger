@@ -59,6 +59,14 @@ a {
     color: $white;
 }
 
+textarea {
+    resize: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+    
+}
+
 .vh:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
