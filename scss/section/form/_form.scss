@@ -1,3 +1,8 @@
+.order {
+    @include bg('form.jpg');
+    position: relative;
+}
+
 .form__elem {
     display: flex;
 }
