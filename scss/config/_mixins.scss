@@ -20,6 +20,10 @@
     background: $dark url('../images/backgrounds/' + $url) center center no-repeat;
     background-size: cover;
 }
+@mixin bg-menu ($url) {
+    background: $dark url('../images/5-menu/' + $url) center center no-repeat;
+    background-size: cover;
+}
 
 //шрифты
 
