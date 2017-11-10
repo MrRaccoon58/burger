@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     position: relative;
-    min-width: rem(940px) + rem(20px);
+    // min-width: rem(940px) + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
@@ -27,6 +27,7 @@
 .container {
     margin: 0 auto;
     position: relative;
+    width: 100%;
     max-width: rem(940px);
     display: flex;
     flex-direction: column;

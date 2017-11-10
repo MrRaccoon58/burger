@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: rem(100px);
+    right: 0 + 5%;
+}
+
+.navbar__link {
+display: inline-block;
+position: relative;
+width: rem(14px);
+height: rem(14px);
+margin-bottom: rem(10px);
+&:last-child {
+    margin-bottom: rem(0px);
+}
+&:hover {
+    .navbar__dot:after {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+}
+
+.navbar__dot {
+    display: inline-block;
+    @include circle(rem(6px), $white);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &:after {
+        @include circle(rem(14px), transparent);
+        border: rem(1px) solid $white;
+        transition: .3s;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        
+    }
+}

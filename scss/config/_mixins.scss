@@ -14,6 +14,19 @@
     border-radius: 50%;
     background-color: $color;
 }
+
+//адаптив
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+   }
+   @mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+   }
+
 //фон 
 @mixin bg ($url) {
     background: $dark url('../images/backgrounds/' + $url) center center no-repeat;
