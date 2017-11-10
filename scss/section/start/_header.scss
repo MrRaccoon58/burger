@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     &:after {
-        @include circle(4px, $white);
+        @include circle(rem(4px), $white);
         margin: 0 rem(17px);
     }
     &:last-child:after {
@@ -36,45 +36,3 @@
         text-decoration: underline;
     }
 }
-// .start__header {
-//     padding-top: rem(10px);
-// }
-
-// .logo__img {
-//     width: 92px;
-//     height: 69px;
-//     background: url('../images/1-start/logo.png') no-repeat;
-// }
-
-// .nav {
-//     flex: 1 0 auto;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     align-items: center;
-//     padding-right: 20px;
-//     // font-family: 'Ubuntu';
-//     // font-weight: 500;
-//     @include font-ubuntu;
-// }
-
-// .nav__item {
-//     &::before {
-//         content: '';
-//         @include circle(rem(4px), $white);
-//         margin: rem(2px) rem(15px);
-//     }
-//     &:first-child::before {
-//         display: none;
-//     }
-// }
-// .nav__link {
-//     &:hover {
-//         text-decoration: underline;
-//     }
-// }
-
-// .header__btn {
-//     display: flex;
-//     align-items: center;
-// }

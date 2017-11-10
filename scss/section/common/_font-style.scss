@@ -1,7 +1,7 @@
 // заголовки
 .section-title {
     color: $orange;
-    font-size: 72px;
+    font-size: rem(72px);
     @include font-gagalin();
     margin-bottom: rem(40px);
     &_color {
@@ -20,6 +20,6 @@
 }
 .oblique-title {
     color: $white;
-    font-size: 65px;
+    font-size: rem(65px);
     @include font-lifehack();
 }

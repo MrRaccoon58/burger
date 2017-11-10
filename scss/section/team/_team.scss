@@ -78,10 +78,11 @@
 .team-acco__pic-img {
     background: url('/images/4-team/aphex.jpg') center center no-repeat;
     background-size: 135%;
-    background-position: -32px 0;
+    background-position: rem(-32px) 0;
     display: block;
-    overflow: hidden; // 
-    width: 150px;height: 150px;
+    overflow: hidden;
+    width: rem(150px);
+    height: rem(150px);
     border-radius: 50%;
 }
 

@@ -9,11 +9,12 @@
     text-decoration: none;
     font-size: rem(13px);
     font-weight: 500;
-    transition: background-color .5s;
+    transition: color .5s, background-color .5s;
     text-transform: uppercase;
     //form__button_background_transparent
     &:hover {
-        background-color: darken($color: $red, $amount: 10); 
+        background-color: darken($color: $red, $amount: 15); 
+        color: darken($color: $white, $amount: 20); 
     }
     &_background {
         &_transparent {
@@ -29,7 +30,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    margin-right: 15px;
+    margin-right: rem(15px);
   }
   
   .radio__input, .checkbox__input {
@@ -47,9 +48,9 @@
   .radio__title:before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: rem(20px);
+    height: rem(20px);
+    margin-right: rem(5px);
     background-color: white; 
     border-radius: 50%;
     transition: .2s;
@@ -57,22 +58,22 @@
   .radio__title:after {
     content: '';
     display: inline-block;
-    width: 0px;
-    height: 0px;
-    margin-right: 5px;
+    width: rem(0px);
+    height: rem(0px);
+    margin-right: rem(5px);
     border-radius: 50%;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: rem(10px);
+    top: rem(10px);
     transition: .2s;
   }
   
   .radio__input:checked + .radio__title:after {
     background-color: #e35028;
-    width: 10px;
-    height: 10px;
-    left: 5px;
-    top: 6px;
+    width: rem(10px);
+    height: rem(10px);
+    left: rem(5px);
+    top: rem(6px);
   }
   
   .checkbox__title {
@@ -83,9 +84,9 @@
     content:'';
     display: inline-block;
     background-color: #fff;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+    width: rem(15px);
+    height: rem(15px);
+    margin-right: rem(5px);
   }
   .checkbox__title:after {
     content:'';
@@ -94,19 +95,19 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 0px;
-    height: 0px;
-    top: 7px;
-    left: 7px;
+    width: rem(0px);
+    height: rem(0px);
+    top: rem(7px);
+    left: rem(7px);
     position: absolute;
     transition: .1s;
   }
   
   .checkbox__input:checked + .checkbox__title:after {
-    width: 13px;
-    height: 13px;
-    top: 1px;
-    left: 1px;
+    width: rem(13px);
+    height: rem(13px);
+    top: rem(1px);
+    left: rem(1px);
   }
 
   

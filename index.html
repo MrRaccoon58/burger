@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -419,40 +419,40 @@
                 <div class="container order__container">
                     <div class="section-title section-title_position_center">закажите доставку</div>
                     <div class="form">
-                        <form action="" class="form__elem">
+                        <form action="/" method="post" class="form__elem">
                             <div class="form__content">
                                 <div class="form__row">
                                     <div class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="name">
                                     </div>
                                     <div class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="phone">
                                     </div>
                                 </div>
                                 <div class="form__row">
                                     <div class="form__block">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="street">
                                     </div>
                                 </div>
                                 <div class="form__row">
                                     <div class="form__block">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="home">
                                     </div>
                                     <div class="form__block">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="housing">
                                     </div>
                                     <div class="form__block">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="apt">
                                     </div>
                                     <div class="form__block">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input">
+                                        <input required placeholder="*" type="text" class="form__input" name="floor">
                                     </div>
                                 </div>
                             </div>
@@ -460,18 +460,18 @@
                                 <div class="form__row">
                                     <div class="form__block">
                                         <div class="form__title">Комментарий</div>
-                                        <textarea name="" id="" cols="30" rows="5" class="form__input form__textarea"></textarea>
+                                        <textarea name="comment" id="" cols="30" rows="5" class="form__input form__textarea"></textarea>
                                     </div>
                                 </div>
                                 <div class="form__row">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="money">
+                                        <input class="radio__input" type="radio" name="change">
                                         <div class="radio__title">
                                             Потребуется сдача
                                         </div>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="money">
+                                        <input class="radio__input" type="radio" name="card">
                                         <div class="radio__title">
                                             Оплата по карте
                                         </div>
@@ -479,7 +479,7 @@
                                 </div>
                                 <div class="form__row">
                                     <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="nocall" name="name">
                                         <div class="checkbox__title">
                                             Не перезванивать
                                         </div>
@@ -487,8 +487,8 @@
                                 </div>
                                 <div class="form__row">
                                     <div class="form__btns">
-                                        <button class="form__button-send button">Заказать</button>
-                                        <button class="form__button-clear button button_background_transparent">Очистить</button>
+                                        <button class="form__button button">Заказать</button>
+                                        <button class="form__button button button_background_transparent" type="reset">Очистить</button>
                                     </div>
                                 </div>
                             </div>

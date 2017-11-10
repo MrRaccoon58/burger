@@ -1,20 +1,19 @@
+//перевод пикселей в rem
+@function rem($px) {
+    @return $px / $body-font-size+0rem;
+}
+
 
 //кружочки
 @mixin circle($size, $color) {
     content: '';
     vertical-align: bottom;
     display: inline-block;
-    width: rem($size);
-    height: rem($size);
+    width: $size;
+    height: $size;
     border-radius: 50%;
     background-color: $color;
 }
-
-//перевод пикселей в rem
-@function rem($px) {
-    @return $px / 16px+0rem;
-}
-
 //фон 
 @mixin bg ($url) {
     background: $dark url('../images/backgrounds/' + $url) center center no-repeat;

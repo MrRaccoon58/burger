@@ -11,8 +11,8 @@
 
 .menu__main-title {
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: rem(100px);
+    top: rem(100px);
 }
 
 .menu__acco {
@@ -101,27 +101,12 @@
     line-height: 2.5;
     position: relative;
     cursor: default;
-    // padding: rem(40px);
-    // line-height: 2;
-    
-    // transform: scaleX(1);
-    // // display: none;
-    // // position: absolute;
-    // // width: 0;
-    // transition: display .5s;
 }
 
 .menu__acco-description-wrap {
     position: absolute;
-    padding: 50px;
-    width: 750px;
+    padding: rem(50px);
+    width: rem(750px);
 }
-// .menu__acco-description-wrap {
-//     background-color: rgba($dark, .9);
-// }
 
-// .menu__acco-title-container { 
-//     height: 100%;
-//     min-width: rem(80px);
-// }
 

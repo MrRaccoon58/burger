@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: $body-font-size;
     line-height: 1.42;
     @include font-ubuntu();
     background-color: $dark;
@@ -62,7 +62,7 @@ a {
 textarea {
     resize: none;
 }
-textarea:focus, input:focus{
+button:focus, textarea:focus, input:focus{
     outline: none;
     
 }
@@ -72,9 +72,9 @@ button {
 }
 .vh:not(:focus):not(:active) {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
     border: 0;
     padding: 0;
     white-space: nowrap;
