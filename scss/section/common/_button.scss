@@ -108,3 +108,13 @@
     top: 1px;
     left: 1px;
   }
+
+  
+.radio__input:focus + .radio__title:before {
+      nav-index: 10;
+      box-shadow: 0 0 rem(2px) rem(2px) $red;
+  }
+.checkbox__input:focus + .checkbox__title:before {
+      nav-index: 10;
+      box-shadow: 0 0 rem(2px) rem(2px) $red;
+  }
