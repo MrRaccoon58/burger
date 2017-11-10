@@ -1,5 +1,5 @@
-.menu{
-@include bg('menu.jpg');
+.menu {
+    @include bg('menu.jpg');
 }
 
 .menu__container {
@@ -8,63 +8,120 @@
     display: flex;
     flex-direction: row;
 }
+
 .menu__main-title {
     position: absolute;
     left: 100px;
     top: 100px;
 }
 
-.menu__list {
-flex: 1;
-display: flex;
-justify-content: flex-end;
-}
-.menu__item {
+.menu__acco {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    // left: 0;
     display: flex;
     justify-content: flex-end;
+}
+
+.menu__acco-item {
+    width: rem(80px);
+    display: flex;
     position: relative;
+    transition: .5s;
+    cursor: pointer;
+    
     &:hover {
-        .menu__content {
-            width: 650px;
-            opacity: 1;
-            padding: 50px;
+        width: 50%;
+        .menu__acco-text {
+
         }
     }
+}
 
+.menu__acco-container {
+    width: 100%;
+    display: flex;
 }
-.menu__title {
-    width: 150px;
-    box-shadow: inset 0 0 1000px black;
-    background-size: cover;
-}
-.menu__title--meat {
+
+.menu__acco-container--meat {
+    transition: .5s;
     @include bg-menu('meat.jpg');
+    background-position: 70% 0;
+    &:hover {
+        background-position: 100% 0;
+    }
+    
+    
 }
-.menu__title--vegan {
+
+.menu__acco-container--vegan {
     @include bg-menu('vegan.jpg');
+    background-position: 90% 0;
+     &:hover {
+        background-position: 100% 0;
+    }
 }
-.menu__title--diet {
+
+.menu__acco-container--diet {
     @include bg-menu('diet.jpg');
+    background-position: 50% 0;
+     &:hover {
+        background-position: 100% 0;
+    }
 }
 
-.menu__title-text {
+.menu__acco-title {
+    flex: 0.1;
+    min-width: 5rem;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(black, .5);
+    }
+}
+.menu__acco-title-wrap {
+    min-width: 25rem;
     position: absolute;
-    left: -400px;
-    width: 100vh;
-    text-align: center;
-    // align-self: center;
-    // justify-self: flex-start;
-    transform: rotate(-90deg) translate(-46%);
-    font-size: 50px;
+    font-size: rem(50px);
     @include font-gagalin;
-
+    transform: rotate(-90deg) translate(-75%,-220%);
 }
-.menu__content {
-    transition: .6s;
-    width: 0;
-    opacity: 0;
-    padding: 0px;
-    line-height: 2;
-    max-width: 940px;
+.menu__acco-description {
+    flex: 1;
+    overflow: hidden;
     background-color: rgba($dark, .9);
+    line-height: 2.5;
+    position: relative;
+    cursor: default;
+    // padding: rem(40px);
+    // line-height: 2;
+    
+    // transform: scaleX(1);
+    // // display: none;
+    // // position: absolute;
+    // // width: 0;
+    // transition: display .5s;
 }
+
+.menu__acco-description-wrap {
+    position: absolute;
+    padding: 50px;
+    width: 750px;
+}
+// .menu__acco-description-wrap {
+//     background-color: rgba($dark, .9);
+// }
+
+// .menu__acco-title-container { 
+//     height: 100%;
+//     min-width: rem(80px);
+// }
+

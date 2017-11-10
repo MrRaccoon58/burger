@@ -17,7 +17,18 @@
     &:hover {
         .review__hover {
             opacity: 1;
-            transform: scale(1);
+            .review__button {
+                transform: translateX(rem(0px));
+                
+            }
+            .review__title {
+                transform: translateX(rem(0px));
+                
+            }
+            .review__text {
+                transform: translateX(rem(0px));
+                
+            }
         }
     }
 }
@@ -29,9 +40,8 @@
     bottom: 0;
     right: 0;
     background-color: rgba($dark, .8);
-    transition: .2s;
+    transition: .4s;
     opacity: 0;
-    transform: scale(.95);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,13 +54,23 @@
     font-family: 'Gagalin';
     font-size: rem(24px);
     margin-bottom: rem(10px);
+    transform: translateX(rem(-10px));
+    transition: .4s;
 }
 .review__text {
     line-height: 2;
     font-size: rem(20px);
     font-weight: 300;
     margin-bottom: rem(10px);
+    transform: translateX(rem(-10px));
+    transition: .4s;
 }
+
+.review__button {
+    transform: translateX(rem(-10px));
+    transition: .4s;
+}
+
 .review__item--1 {
     background-image: url('./images/6-reviews/1rv.jpg');
 }
