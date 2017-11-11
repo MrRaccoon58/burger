@@ -11,14 +11,24 @@
     background: rgba($dark, .95);
     padding-left: rem(70px);
     padding-top: rem(50px);
-    padding-right: rem(300px);
+    padding-right: rem(50px);
     display: flex;
+    @include tablets {
+        left: 0;
+        width: 100%;
+        padding: rem(100px);
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .team__content {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .team-acco {
@@ -26,12 +36,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .team-acco__item {
     display: flex;
     flex-direction: column;
     margin: rem(10px) 0;
+    @include tablets{
+        align-items: center;
+    }
+    
 }
 
 .team-acco__item_active {
@@ -61,11 +78,21 @@
         border-top: rem(7px) solid $orange;
         margin-right: rem(10px);
     }
+    @include tablets {
+        text-align: center;
+    font-size: rem(25px);
+}
 }
 
 .team-acco__content {
     display: none;
     justify-content: space-between;
+    @include tablets {
+        
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .team-acco__pic {
@@ -73,6 +100,10 @@
     align-items: center;
     justify-content: center;
     flex: .25;
+    @include tablets {
+        margin-bottom: rem(10px);
+        width: 100%;
+    }
 }
 
 .team-acco__pic-img {

@@ -10,6 +10,11 @@
     margin-left: auto;
 }
 
+.nav {
+    @include tablets {
+        display: none;
+    }
+}
 .nav__list {
     display: flex;
     margin-right: rem(17px);
@@ -21,6 +26,9 @@
     &:after {
         @include circle(rem(4px), $white);
         margin: 0 rem(17px);
+        @include big-tablets {
+            margin: 0 rem(5px);
+        }
     }
     &:last-child:after {
             display: none;
@@ -35,4 +43,39 @@
     &:hover {
         text-decoration: underline;
     }
+}
+.header__button {
+    @include tablets {
+        margin-right: rem(17px);
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
+    position: relative;
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
+.hamburger__bars {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.hamburger__bar {
+    display: inline-block;
+    background-color: $white;
+    width: 100%;
+    height: rem(5px);
+    border-radius: rem(5px);
 }
