@@ -1,6 +1,6 @@
 //перевод пикселей в rem
 @function rem($px) {
-    @return $px / $body-font-size+0rem;
+    @return $px / 16px+0rem;
 }
 
 
@@ -20,12 +20,18 @@
     @media screen and (max-width: $tablets) {
         @content;
     }
-   }
-   @mixin phones {
+}
+
+@mixin phones {
     @media screen and (max-width: $phones) {
         @content;
     }
-   }
+}
+@mixin big-tablets {
+    @media screen and (max-width: $big-tablets) {
+        @content;
+    }
+}
 
 //фон 
 @mixin bg ($url) {

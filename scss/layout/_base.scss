@@ -1,25 +1,25 @@
-body,
 html {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.42;
-    @include font-ubuntu();
-    background-color: $dark;
-    color: $white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    font-size: 16px;
     @include tablets {
         font-size: rem(15px);
     }
     @include phones {
-        font-size: rem(14px);
+        font-size: rem(12px);
     }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {   
+    font-size: rem(16px);
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: $white;
+    @include font-ubuntu();
+    background-color: $dark;
 }
 
 h1,
