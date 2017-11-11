@@ -1,6 +1,10 @@
 .we__list {
 display: flex;
 justify-content: space-around;
+@include phones {
+    flex-direction: column;
+    padding: 0 rem(30px);
+}
 
 }
 
@@ -9,10 +13,18 @@ justify-content: space-around;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include phones {
+        flex-direction: row;
+        text-align: center;
+    }
 }
 
 .we__data {
     margin-top: rem(20px);
+    @include phones {
+        margin-left: rem(20px);
+        text-align: left;
+    }
 }
 .we__title {
     @include font-lifehack();
@@ -21,6 +33,10 @@ justify-content: space-around;
 .we__description {
     margin-top: rem(20px);
     font-size: rem(13px);
+    @include phones {
+        margin-top: rem(5px);
+        
+    }
 }
 .we__icon-img {
     width: rem(100px);

@@ -14,6 +14,10 @@
     transition: .2s;
     filter: grayscale(100%);
     position: relative;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     &:hover {
         .review__hover {
             opacity: 1;
@@ -48,6 +52,9 @@
     padding: 0 rem(20px);
     display: flex;
     align-items: flex-start;
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .review__title {
@@ -56,6 +63,9 @@
     margin-bottom: rem(10px);
     transform: translateX(rem(-10px));
     transition: .4s;
+    @include tablets {
+        font-size: rem(14px);
+    }
 }
 .review__text {
     line-height: 2;
@@ -64,11 +74,21 @@
     margin-bottom: rem(10px);
     transform: translateX(rem(-10px));
     transition: .4s;
+    @include tablets {
+        font-size: rem(14px);
+        text-align: center;
+    }
+    @include big-tablets {
+        font-size: rem(14px);
+    }
 }
 
 .review__button {
     transform: translateX(rem(-10px));
     transition: .4s;
+    @include tablets {
+        font-size: rem(14px);
+    }
 }
 
 .review__item--1 {

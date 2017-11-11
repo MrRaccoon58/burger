@@ -23,6 +23,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phones {
+        flex-direction: column;
+        padding: rem(5px) rem(5px);
+    }
+}
+
+.data {
+    @include phones {
+        text-align: center;
+        margin-bottom: rem(5px);
+    }
 }
 
 .data__phone {

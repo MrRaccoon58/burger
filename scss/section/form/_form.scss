@@ -2,7 +2,15 @@
     @include bg('form.jpg');
     position: relative;
 }
-
+.form {
+    display: flex;
+    flex-direction: row;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .form__elem {
     display: flex;
 }
@@ -10,6 +18,10 @@
     width: 50%;
     margin-right: rem(20px);
     &:last-child {
+        margin-right: rem(0px);
+    }
+    @include tablets {
+        width: 80%;
         margin-right: rem(0px);
     }
 }
