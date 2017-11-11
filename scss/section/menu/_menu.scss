@@ -20,8 +20,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
-    // left: 0;
+    bottom: 0; // left: 0;
     display: flex;
     justify-content: flex-end;
 }
@@ -32,12 +31,12 @@
     position: relative;
     transition: .5s;
     cursor: pointer;
-    
-    &:hover {
-        width: 50%;
-        .menu__acco-text {
+}
 
-        }
+.menu__acco-item--active {
+    width: 50%;
+    .menu__acco-container {
+        background-position: 100% 0;
     }
 }
 
@@ -50,34 +49,23 @@
     transition: .5s;
     @include bg-menu('meat.jpg');
     background-position: 70% 0;
-    &:hover {
-        background-position: 100% 0;
-    }
-    
-    
 }
 
 .menu__acco-container--vegan {
     @include bg-menu('vegan.jpg');
     background-position: 90% 0;
-     &:hover {
-        background-position: 100% 0;
-    }
 }
 
 .menu__acco-container--diet {
     @include bg-menu('diet.jpg');
     background-position: 50% 0;
-     &:hover {
-        background-position: 100% 0;
-    }
 }
 
 .menu__acco-title {
     flex: 0.1;
     min-width: 5rem;
     position: relative;
-    &::before{
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -87,13 +75,15 @@
         background-color: rgba(black, .5);
     }
 }
+
 .menu__acco-title-wrap {
     min-width: 25rem;
     position: absolute;
     font-size: rem(50px);
     @include font-gagalin;
-    transform: rotate(-90deg) translate(-75%,-220%);
+    transform: rotate(-90deg) translate(-75%, -220%);
 }
+
 .menu__acco-description {
     flex: 1;
     overflow: hidden;
@@ -108,5 +98,3 @@
     padding: rem(50px);
     width: rem(750px);
 }
-
-
