@@ -4,6 +4,9 @@
     flex-direction: column;
     top: rem(100px);
     right: 0 + 5%;
+    @include tablets {
+        display: none;
+    }
 }
 
 .navbar__dot {
