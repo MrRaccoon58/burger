@@ -66,6 +66,10 @@
     @include tablets {
         font-size: rem(14px);
     }
+    @include phones {
+        font-size: rem(30px);
+        text-align: center;
+    }
 }
 .review__text {
     line-height: 2;
@@ -81,6 +85,22 @@
     @include big-tablets {
         font-size: rem(14px);
     }
+    @include phones {
+        display: none;
+    }
+}
+
+.review__link {
+    @include phones {
+        display: none;
+    }
+}
+
+.review__link-mobile {
+    display: none;
+    @include phones {
+        display: initial;
+    }
 }
 
 .review__button {
@@ -88,6 +108,9 @@
     transition: .4s;
     @include tablets {
         font-size: rem(14px);
+    }
+    @include phones {
+        font-size: rem(16px);
     }
 }
 

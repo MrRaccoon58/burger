@@ -16,6 +16,11 @@
         background-color: darken($color: $red, $amount: 15); 
         color: darken($color: $white, $amount: 20); 
     }
+    &_text-transform {
+      &_normal {
+        text-transform: initial;
+      }
+    }
     &_background {
         &_transparent {
             background-color: transparent;

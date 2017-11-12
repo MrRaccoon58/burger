@@ -3,7 +3,6 @@ display: flex;
 justify-content: space-around;
 @include phones {
     flex-direction: column;
-    padding: 0 rem(30px);
 }
 
 }
@@ -16,32 +15,45 @@ justify-content: space-around;
     @include phones {
         flex-direction: row;
         text-align: center;
+        margin-bottom: rem(40px);
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 .we__data {
     margin-top: rem(20px);
     @include phones {
-        margin-left: rem(20px);
+        margin-left: rem(30px);
         text-align: left;
+        margin-top: rem(0px);
     }
 }
 .we__title {
     @include font-lifehack();
     font-size: rem(24px);
+    @include phones {
+        font-size: rem(30px);
+    }
 }
 .we__description {
     margin-top: rem(20px);
     font-size: rem(13px);
     @include phones {
-        margin-top: rem(5px);
-        
+        margin-top: rem(15px);
+        font-size: rem(16px);
+        line-height: 2;
     }
 }
 .we__icon-img {
     width: rem(100px);
     height: rem(100px);
     fill: $red;
+    @include phones {
+        width: rem(116px);
+        height: rem(116px);
+    }
 }
 .we__icon-img--natural {
     fill: $green;

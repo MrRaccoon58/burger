@@ -71,6 +71,12 @@
     flex: 0.1;
     min-width: 5rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablets {
+        align-items: flex-end;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -83,13 +89,12 @@
 }
 
 .menu__acco-title-wrap {
-    min-width: 25rem;
     position: absolute;
     font-size: rem(50px);
     @include font-gagalin;
-    transform: rotate(-90deg) translate(-75%, -220%);
+    transform: rotate(-90deg);
     @include tablets {
-    transform: rotate(-90deg) translate(-185%, -220%);
+    transform: rotate(-90deg) translate(45%, 0%);
     }
 }
 

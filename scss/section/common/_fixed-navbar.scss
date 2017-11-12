@@ -6,7 +6,7 @@
     right: 0 + 5%;
 }
 
-.navbar__link {
+.navbar__dot {
 display: inline-block;
 position: relative;
 width: rem(14px);
@@ -16,13 +16,13 @@ margin-bottom: rem(10px);
     margin-bottom: rem(0px);
 }
 &:hover {
-    .navbar__dot:after {
+    .navbar__link:after {
         transform: translate(-50%, -50%) scale(1);
     }
 }
 }
 
-.navbar__dot {
+.navbar__link{
     display: inline-block;
     @include circle(rem(6px), $white);
     position: absolute;

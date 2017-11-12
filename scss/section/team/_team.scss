@@ -2,6 +2,15 @@
     @include bg('team.jpg');
 }
 
+.section-title__team {
+    @include tablets {
+        margin-bottom: rem(0px);
+        font-size: rem(60px);
+    }
+    @include phones {
+        font-size: rem(90px);
+    }
+}
 .team__container {
     position: absolute;
     top: 0;
@@ -16,7 +25,7 @@
     @include tablets {
         left: 0;
         width: 100%;
-        padding: rem(100px);
+        padding: rem(30px);
         display: flex;
         justify-content: center;
     }
@@ -80,8 +89,11 @@
     }
     @include tablets {
         text-align: center;
-    font-size: rem(25px);
-}
+        font-size: rem(25px);
+    }
+    @include phones {
+        font-size: rem(30px);
+    }
 }
 
 .team-acco__content {
@@ -101,7 +113,7 @@
     justify-content: center;
     flex: .25;
     @include tablets {
-        margin-bottom: rem(10px);
+        margin-bottom: rem(22px);
         width: 100%;
     }
 }
@@ -109,12 +121,20 @@
 .team-acco__pic-img {
     background: url('/images/4-team/aphex.jpg') center center no-repeat;
     background-size: 135%;
-    background-position: rem(-32px) 0;
+    background-position: rem(-20px) center;
     display: block;
     overflow: hidden;
-    width: rem(150px);
-    height: rem(150px);
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
+    @include tablets {
+        width: rem(100px);
+        height: rem(100px);
+    }
+    @include phones {
+        width: rem(120px);
+        height: rem(120px);
+    }
 }
 
 .team-acco__text {
