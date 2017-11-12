@@ -91,12 +91,12 @@
 .menu__acco-title-wrap {
     position: absolute;
     font-size: rem(50px);
+    white-space: nowrap;
     @include font-gagalin;
     transform: rotate(-90deg);
     @include tablets {
     transform: rotate(-90deg) translate(45%, 0%);
     }
-    white-space: nowrap;
 }
 
 .menu__acco-description {
