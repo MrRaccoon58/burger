@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -62,9 +63,13 @@
                             </a>
                             <a href="#" class="hamburger">
                                 <div class="hamburger__bars">
-                                    <div class="hamburger__bar"></div>
-                                    <div class="hamburger__bar"></div>
-                                    <div class="hamburger__bar"></div>
+                                    <div class="hamburger__bar hamburger__bar--1"></div>
+                                    <div class="hamburger__bar hamburger__bar--2"></div>
+                                    <div class="hamburger__bar hamburger__bar--3"></div>
+                                </div>
+                                <div class="mobile-hamburger__bars vh">
+                                    <div class="mobile-hamburger__bar mobile-hamburger__bar--1"></div>
+                                    <div class="mobile-hamburger__bar mobile-hamburger__bar--2"></div>
                                 </div>
                             </a>
                         </div>
@@ -83,8 +88,8 @@
                             <use xlink:href="./images/sprite.svg#arrow-scroll"></use>
                         </svg>
                     </a>
-
                 </div>
+
             </section>
             <section class="section we section_centered" id="we">
                 <div class="container we__container">
@@ -237,7 +242,7 @@
                         <li class="menu__acco-item menu__acco-item--active">
                             <div class="menu__acco-container menu__acco-container--meat">
                                 <div class="menu__acco-title">
-                                    <div class="menu__acco-title-wrap"> 
+                                    <div class="menu__acco-title-wrap">
                                         Для мясоедов
                                     </div>
                                 </div>
@@ -583,34 +588,68 @@
                 </div>
             </section>
         </div>
-    </div> 
+    </div>
     <ul class="navbar">
-            <li class="navbar__dot navbar__dot-1">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-2">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-3">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-4">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-5">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-6">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-7">
-                <a href="#" class="navbar__link"></a>
-            </li>
-            <li class="navbar__dot navbar__dot-8">
-                <a href="#" class="navbar__link"></a>
-            </li>
+        <li class="navbar__dot navbar__dot-1">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-2">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-3">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-4">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-5">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-6">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-7">
+            <a href="#" class="navbar__link"></a>
+        </li>
+        <li class="navbar__dot navbar__dot-8">
+            <a href="#" class="navbar__link"></a>
+        </li>
     </ul>
-    <script src="js/scripts.js"></script>    
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#we" class="mobile-menu__link">
+                    о нас
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#burgers" class="mobile-menu__link">
+                    бургеры
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#team" class="mobile-menu__link">
+                    команда
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#menu" class="mobile-menu__link">
+                    меню
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#reviews" class="mobile-menu__link">
+                    отзывы
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#contacts" class="mobile-menu__link">
+                    контакты
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
