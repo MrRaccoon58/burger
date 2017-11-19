@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-$(document).ready(() => {
+$(function() {
   //аккордеон секции команда
   $(".team-acco__trigger").click(function(e) {
     e.preventDefault();
@@ -20,6 +20,25 @@ $(document).ready(() => {
     } else {
       item.removeClass("team-acco__item_active");
       currentContent.css({ height: 0 });
+    }
+  });
+});
+
+$(function() {
+  //аккордеон секции меню
+  $(".menu__acco-item").click(function(e) {
+    const $this = $(e.currentTarget);
+    if (!$this.hasClass("menu__acco-item--active")) {
+      $this.addClass("menu__acco-item--active");
+      $this.siblings().removeClass("menu__acco-item--active");
+      setTimeout(() => {
+        $this.find(".menu__acco-description-wrap").css({ opacity: "1" });
+      }, 450);
+    } else {
+      $(".menu__acco-description-wrap").css({ opacity: "0" });
+      setTimeout(() => {
+        $this.removeClass("menu__acco-item--active");
+      }, 450);
     }
   });
 });

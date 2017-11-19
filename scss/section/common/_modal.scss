@@ -1,0 +1,33 @@
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($dark, .5);
+}
+
+.modal__window {
+    padding: rem(20px);
+    border-radius: rem(10px);
+    background-color: $white;
+    box-shadow: 0 0 rem(10px) black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+}
+.modal__content {
+    color: $dark;
+    margin-bottom: rem(20px);
+}
+
+// <div class="modal">
+// <div class="modal__window">
+//     <div class="modal__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi laudantium repudiandae similique eum autem saepe modi laborum iusto temporibus fugiat commodi vel facilis amet harum earum, tempora dignissimos molestiae perspiciatis molestias porro ipsa cupiditate! Rem error nostrum libero molestiae sed velit necessitatibus expedita ipsum neque quas debitis officiis praesentium quam adipisci vero facere, id voluptatum delectus vitae perferendis reprehenderit alias asperiores! Ab aliquid quos repellat vitae molestias facere aspernatur nobis commodi. Ipsum, corrupti consectetur sit repudiandae, eligendi facilis modi consequuntur voluptatibus sint rerum velit ducimus! Sequi consequuntur, nam alias inventore sunt provident itaque officia. Molestiae facere, velit nulla et non in ea repellendus facilis dolor expedita vero, qui, inventore commodi veniam sapiente? Quam iusto itaque repellat deserunt veniam consectetur numquam illum provident, iste similique voluptatum? Impedit quibusdam aperiam cum incidunt voluptatibus commodi consequuntur, laboriosam at iusto, cupiditate quam illo maxime quos ipsa quisquam nisi, veniam unde quasi nemo iste? Consequatur natus rerum nam placeat, quod atque recusandae delectus fugit dolor aspernatur nesciunt ullam ab necessitatibus dolore, molestias aut itaque quia commodi quasi sit, optio quas dignissimos. Totam ut saepe recusandae libero nostrum velit non placeat ipsum animi atque ab ipsa eligendi commodi, molestias, officia fugit cum rem. Aut, asperiores tempora praesentium suscipit, ab voluptate officiis dolorem cumque nihil, laudantium iste quod aliquam. Placeat, excepturi quae voluptatum vero, adipisci libero deleniti eius quia atque officia eaque in? Sint animi delectus porro tempore eos illum dolores blanditiis accusamus vero aspernatur unde, facilis magni placeat ad tempora, repellendus expedita, ea nostrum. Commodi laborum adipisci cupiditate quibusdam necessitatibus, eaque nemo expedita odio unde, ea corporis soluta. Inventore iusto sed nihil quis corrupti perferendis aspernatur accusantium velit vel, officiis harum mollitia nemo tenetur nam consequatur tempora facilis dolore. Pariatur, porro laudantium natus dolores, nam dolore perspiciatis in, repellendus dolorum maiores neque? Quae, nisi culpa?</div>
+//     <div class="button">закрыть</div>
+// </div>
+// </div>
