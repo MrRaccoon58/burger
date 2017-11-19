@@ -22,6 +22,15 @@ $(function() {
       currentContent.css({ height: 0 });
     }
   });
+
+  $(document).mouseup(function (e) { //клик за пределами аккордеона
+    const container = $(".team-acco__item");
+    if (container.has(e.target).length === 0){
+      container.removeClass("team-acco__item_active");
+      $(".team-acco__content").css({ height: 0 });
+    }
+});
+
 });
 
 //аккордеон секции меню
@@ -29,18 +38,32 @@ $(function() {
   $(".menu__acco-item").click(function(e) {
     const $this = $(e.currentTarget);
     if (!$this.hasClass("menu__acco-item--active")) {
-      $this.addClass("menu__acco-item--active");
-      $this.siblings().removeClass("menu__acco-item--active");
-      setTimeout(() => {
-        $this.find(".menu__acco-description-wrap").css({ opacity: "1" });
-      }, 450);
+        $this.siblings().find(".menu__acco-description-wrap").css({ opacity: "0" });
+        setTimeout(() => {
+        $this.siblings().removeClass("menu__acco-item--active");
+        $this.addClass("menu__acco-item--active");
+        }, 250);
+        setTimeout(() => {
+      $this.find(".menu__acco-description-wrap").css({ opacity: "1" });
+      }, 700);
     } else {
       $(".menu__acco-description-wrap").css({ opacity: "0" });
       setTimeout(() => {
         $this.removeClass("menu__acco-item--active");
-      }, 450);
+      }, 250);
     }
   });
+
+  $(document).mouseup(function (e) { //клик за пределами аккордеона
+    const container = $(".menu__acco-item");
+    if (container.has(e.target).length === 0){
+      $(".menu__acco-description-wrap").css({ opacity: "0" });
+      setTimeout(() => {
+        container.removeClass("menu__acco-item--active");
+      }, 250);
+    }
+});
+
 });
 
 //меню в первой секции

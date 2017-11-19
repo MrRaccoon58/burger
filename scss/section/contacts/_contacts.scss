@@ -2,6 +2,15 @@
     @include bg('map.jpg');
     position: relative;
 }
+.contacts__header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: rem(100px);
+    background-color: rgba($dark, .9);
+    box-shadow: 0 0 rem(10px) rgba($color: $dark, $alpha: .9);
+    z-index: 10;
+}
 
 .map {
     position: absolute;
