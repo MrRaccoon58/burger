@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
+//аккордеон секции команда
 $(function() {
-  //аккордеон секции команда
   $(".team-acco__trigger").click(function(e) {
     e.preventDefault();
     const $this = $(e.currentTarget);
@@ -24,8 +24,8 @@ $(function() {
   });
 });
 
+//аккордеон секции меню
 $(function() {
-  //аккордеон секции меню
   $(".menu__acco-item").click(function(e) {
     const $this = $(e.currentTarget);
     if (!$this.hasClass("menu__acco-item--active")) {
@@ -43,9 +43,8 @@ $(function() {
   });
 });
 
+//меню в первой секции
 $(function() {
-  //меню в первой секции
-
   $(".mobile-menu").hide();
   $(".hamburger").click(e => {
     e.preventDefault();
@@ -64,3 +63,33 @@ $(function() {
     }
   });
 });
+
+//yandex карты
+function yamaps() {
+  ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [56.015, 92.87],
+        zoom: 12,
+        controls: []
+      }),
+      burgerCollection = new ymaps.GeoObjectCollection(null, {
+        iconLayout: "default#image",
+        iconImageHref: "./images/8-contacts/marker.png",
+        iconImageSize: [46, 57],
+        iconImageOffset: [0, -40]
+      }),
+      krskBurgersCoords = [
+        [56.01183725, 92.82266731],
+        [56.01017297, 92.85667715],
+        [55.99333977, 92.89615927],
+        [56.03774808, 92.89564428]
+      ];
+    for (var i = 0, l = krskBurgersCoords.length; i < l; i++) {
+      burgerCollection.add(new ymaps.Placemark(krskBurgersCoords[i]));
+    }
+    myMap.geoObjects.add(burgerCollection);
+    myMap.behaviors.disable("scrollZoom");
+  }
+}
+yamaps();

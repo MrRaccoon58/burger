@@ -36,21 +36,38 @@
 .burgers__content {
     display: flex;
     justify-content: center;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .burgers__img {
     flex: 1;
     display: flex;
     align-items: center;
+    @include tablets {
+     justify-content: center;
+    }
 }
 
 .burgers__img-pic {
     display: block;
     width: 100%;
+    @include tablets {
+     width: 70%;
+    }
 }
 
 .burgers__data {
     flex: 1;
+    @include tablets {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
 }
 
 .burgers__title {
@@ -119,12 +136,15 @@
     left: 9999px;
     width: rem(270px);
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity  .3s;
     background-color: rgba($white, .7);
     border-radius: rem(10px);
     padding: rem(20px);
     display: flex;
     flex-direction: column;
+    @include tablets {
+        padding-right: rem(60px);
+    }
 }
 
 .burgers__consist-item {
@@ -150,13 +170,19 @@ width: 100%;
     background-image: url('/images/3-burgers/kkal.png');
     background-position: top center;
     background-repeat: no-repeat;
-    width: rem(60px);
+    width: rem(65px);
     height: rem(80px);
     position: absolute;
     bottom: 0;
     left: 0;
     @include font-gagalin;
     text-align: center;
+    @include tablets {
+     bottom: initial;
+     left: initial;
+     top: 0;
+     right: 0;
+    }
 }
 
 .burgers__ccal-text {
