@@ -1,12 +1,5 @@
 /*jshint esversion: 6 */
 
-// $('.maincontent').onepage_scroll();
-// $("#link-2").click(function (e) { 
-//   e.preventDefault();
-//   console.log(e);
-//   $('.maincontent').moveTo(2);
-// });
-
 $(function() {//OPS
   $('.maincontent').onepage_scroll();
   $('.link-2').click(function (e) { 
@@ -62,7 +55,8 @@ $(function () {
   let owl = $('.owl-carousel');
   owl.owlCarousel({
     items: 1,
-    loop: true
+    loop: true,
+    center: true
   });
 
   $('.burgers-controls_next').click(function (e) {

@@ -41,6 +41,7 @@
 .burgers__content {
     display: flex;
     justify-content: center;
+    padding: 0 rem(20px);
     @include tablets {
         flex-direction: column;
         align-items: center;
