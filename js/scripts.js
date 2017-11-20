@@ -1,5 +1,19 @@
 /*jshint esversion: 6 */
 
+
+$(function() {//модалки
+ $('.review__button').click(function (e) { 
+    e.preventDefault();
+    let $this = e.currentTarget;
+    let thisText = $(this).prev('.review__text')
+    let text = thisText.text();
+    thisText.addClass('review__text_fancy');
+    $.fancybox.open(text)
+ });
+});
+
+
+
 //слайдер
 $(function () {
   let owl = $('.owl-carousel');
@@ -7,16 +21,14 @@ $(function () {
     items: 1,
     loop: true
   });
-  // Go to the next item
+
   $('.burgers-controls_next').click(function (e) {
     e.preventDefault();
-    owl.trigger('next.owl.carousel');
+    owl.trigger('next.owl.carousel', [300]);
   })
-  // Go to the previous item
-  $('.customPrevBtn').click(function (e) {
+
+  $('.burgers-controls_prev').click(function (e) {
     e.preventDefault();
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
   })
 });
