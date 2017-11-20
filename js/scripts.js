@@ -1,5 +1,44 @@
 /*jshint esversion: 6 */
 
+// $('.maincontent').onepage_scroll();
+// $("#link-2").click(function (e) { 
+//   e.preventDefault();
+//   console.log(e);
+//   $('.maincontent').moveTo(2);
+// });
+
+$(function() {//OPS
+  $('.maincontent').onepage_scroll();
+  $('.link-2').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(2);
+ });
+  $('.link-3').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(3);
+ });
+  $('.link-4').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(4);
+ });
+  $('.link-5').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(5);
+ });
+  $('.link-6').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(6);
+ });
+  $('.link-7').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(8);
+ });
+  $('.link-8').click(function (e) { 
+       e.preventDefault();
+       $('.maincontent').moveTo(8);
+ });
+ });
+
 
 $(function() {//модалки в ревью
  $('.review__button').click(function (e) { 
