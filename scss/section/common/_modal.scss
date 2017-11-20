@@ -1,28 +1,63 @@
-.modal {
-    display: none;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba($dark, .5);
-}
+.swal-overlay {
+    background-color: rgba($dark, .9);
 
-.modal__window {
-    padding: rem(20px);
-    border-radius: rem(10px);
+    
+  }
+
+  .swal-overlay--show-modal {
+
+  }
+
+  .swal-modal {
     background-color: $white;
+    border-radius: rem(10px);
+    padding: 0;
+    margin: 0;
     box-shadow: 0 0 rem(10px) black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80%;
-}
-.modal__content {
+    animation: showSweetAlert;
+    
+  }
+
+.swal-text {
     color: $dark;
-    margin-bottom: rem(20px);
+    margin: rem(20px) 0;
+    padding: 0;
+    text-align: left;
+    &:first-child {
+        margin-top: rem(20px);
+    }
 }
+.swal-footer {
+    text-align: center;
+    margin: 0;
+    padding: rem(10px) 0; 
+
+}
+.swal-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: rem(10px) rem(15px);
+    border-radius: rem(5px);
+    background: $red;
+    color: $white;
+    text-decoration: none;
+    font-size: rem(13px);
+    font-weight: 500;
+    transition: color .5s, background-color .5s;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($color: $red, $amount: 15); 
+        color: darken($color: $white, $amount: 20); 
+    }
+    &:active {
+        outline: $orange;
+        background-color: darken($color: $red, $amount: 15); 
+    }
+    &:focus {
+        outline: $orange;
+        box-shadow: none;
+    }
+  }
 
 // <div class="modal">
 // <div class="modal__window">

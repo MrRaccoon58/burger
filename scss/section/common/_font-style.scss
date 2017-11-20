@@ -20,6 +20,11 @@
             text-align: center;
         }
     }
+    &_size {
+        &_small {
+            font-size: rem(30px);
+        }
+    }
 }
 .oblique-title {
     color: $white;

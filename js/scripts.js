@@ -1,15 +1,19 @@
 /*jshint esversion: 6 */
 
 
-$(function() {//модалки
+$(function() {//модалки в ревью
  $('.review__button').click(function (e) { 
-    e.preventDefault();
-    let $this = e.currentTarget;
-    let thisText = $(this).prev('.review__text')
-    let text = thisText.text();
-    thisText.addClass('review__text_fancy');
-    $.fancybox.open(text)
- });
+      e.preventDefault();
+      const modalScroll = $("body");
+      modalScroll.disablescroll();
+          let $this = e.currentTarget;
+          let thisText = $(this).prev('.review__text');
+          let text = thisText.text();
+          swal(text, {button: 'закрыть'}).then((value) => {
+            modalScroll.disablescroll("undo");
+          });
+});
+
 });
 
 
@@ -25,12 +29,12 @@ $(function () {
   $('.burgers-controls_next').click(function (e) {
     e.preventDefault();
     owl.trigger('next.owl.carousel', [300]);
-  })
+  });
 
   $('.burgers-controls_prev').click(function (e) {
     e.preventDefault();
     owl.trigger('prev.owl.carousel', [300]);
-  })
+  });
 });
 
 

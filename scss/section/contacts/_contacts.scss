@@ -8,8 +8,20 @@
     width: 100%;
     height: rem(100px);
     background-color: rgba($dark, .9);
+    @include bg('footer.jpg');
     box-shadow: 0 0 rem(10px) rgba($color: $dark, $alpha: .9);
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts__header-text  {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+    margin: 0;
+    padding: 0;
+
 }
 
 .map {
