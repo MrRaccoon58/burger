@@ -101,6 +101,10 @@
     width: 100%;
     padding: rem(40px);
     opacity: 0;
+    text-align: justify;
+    @include phones {
+        padding: rem(10px);
+    }
 }
 
 .menu__acco-item--active {

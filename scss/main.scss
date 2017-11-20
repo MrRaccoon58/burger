@@ -11,6 +11,11 @@
 @import 'misc/_test';
 @import 'misc/_media';
 
+//widgets
+@import 'widgets/_owl';
+@import 'widgets/_owlTheme';
+@import 'widgets/_normalize';
+
 //section
     //common
         @import 'section/common/_button';

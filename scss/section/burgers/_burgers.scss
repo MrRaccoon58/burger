@@ -1,6 +1,7 @@
 .burgers {
     background: linear-gradient($orange, $orangemore, $orange);
     display: flex;
+    justify-content: center;
 }
 
 .burgers-controls {
@@ -21,6 +22,7 @@
 }
 
 .burgers__container {
+    margin: 0;
     width: 100%;
     height: 100%;
     position: relative;

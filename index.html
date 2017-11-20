@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Бургеры с доставкой | Mr. Burger </title>
+    <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -19,6 +20,44 @@
             <h1 class="vh">Mr. Burger - Настоящие бургеры!</h1>
             <section class="section start" id="start">
                 <h2 class="vh">Mr. Burger</h2>
+                <div class="mobile-menu">
+                    <a class="mobile-menu__close">
+                        <div class="mobile-menu__cross mobile-menu__cross-1"></div>
+                        <div class="mobile-menu__cross mobile-menu__cross-2"></div>
+                    </a>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href="#we" class="mobile-menu__link">
+                                о нас
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#burgers" class="mobile-menu__link">
+                                бургеры
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#team" class="mobile-menu__link">
+                                команда
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#menu" class="mobile-menu__link">
+                                меню
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#reviews" class="mobile-menu__link">
+                                отзывы
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#contacts" class="mobile-menu__link">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="container start__container">
                     <header class="header">
                         <a href="#" class="header__logo logo">
@@ -67,10 +106,6 @@
                                     <div class="hamburger__bar hamburger__bar--1"></div>
                                     <div class="hamburger__bar hamburger__bar--2"></div>
                                     <div class="hamburger__bar hamburger__bar--3"></div>
-                                </div>
-                                <div class="mobile-hamburger__bars vh">
-                                    <div class="mobile-hamburger__bar mobile-hamburger__bar--1"></div>
-                                    <div class="mobile-hamburger__bar mobile-hamburger__bar--2"></div>
                                 </div>
                             </a>
                         </div>
@@ -151,14 +186,14 @@
                 </div>
             </section>
             <section class="section burgers" id="burgers">
-            <h2 class="section-title vh">Наши бургеры</h2>
+                <h2 class="section-title vh">Наши бургеры</h2>
                 <div class="burgers-controls">
-                    <a href="#" class="burgers-controls__link burgers-controls__left">
+                    <a href="" class="burgers-controls__link burgers-controls__left burgers-controls-prev">
                         <img src="./images/left.png" alt="" class="burgers-controls__img">
                     </a>
                 </div>
                 <div class="container burgers__container">
-                    <ul class="burgers__list">
+                    <ul class="burgers__list owl-carousel">
                         <li class="burgers__item">
                             <div class="burgers__content">
                                 <div class="burgers__img">
@@ -166,9 +201,12 @@
                                 </div>
                                 <div class="burgers__data">
                                     <div class="section-title section-title_color_white burgers__title">Dark BEEF Burger</div>
-                                    <div class="burgers__description">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                    <div class="burgers__description">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско.</div>
                                     <div class="burgers__price-and-order">
-                                        <div class="burgers__price"> <span class="section-title section-title_color_red burgers__price-span">500</span>рублей</div>
+                                        <div class="burgers__price">
+                                            <span class="section-title section-title_color_red burgers__price-span">500</span>рублей</div>
                                         <a href="#" class="burgers__button button">Заказать</a>
                                     </div>
                                 </div>
@@ -178,47 +216,269 @@
                                 <div class="burgers__consist-text">состав</div>
                                 <ul class="burgers__consist-list">
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/meat.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/meat.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Говядина</div>
                                         <div class="burgers__consist-weight">300 г</div>
                                     </li>
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/buns.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/buns.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Булочки</div>
                                         <div class="burgers__consist-weight">100 г</div>
                                     </li>
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/salad.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/salad.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Зелень</div>
                                         <div class="burgers__consist-weight">70 г</div>
                                     </li>
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/sauce.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/sauce.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Соус</div>
                                         <div class="burgers__consist-weight">150 г</div>
                                     </li>
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/cucumber.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cucumber.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Овощи</div>
                                         <div class="burgers__consist-weight">200 г</div>
                                     </li>
                                     <li class="burgers__consist-item">
-                                        <div class="burgers__consist-pic"><img src="./images/3-burgers/cheese.png" alt="ингридиенты" class="burgers__consist-pic-img"></div>
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cheese.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
                                         <div class="burgers__consist-name">Сыр</div>
                                         <div class="burgers__consist-weight">800 г</div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="burgers__ccal">
-                                    <div class="burgers__ccal-text burgers__ccal-text--1">1200</div>
-                                    <div class="burgers__ccal-text burgers__ccal-text--2">ккал</div>
+                                <div class="burgers__ccal-text burgers__ccal-text--1">1200</div>
+                                <div class="burgers__ccal-text burgers__ccal-text--2">ккал</div>
+                            </div>
+                        </li>
+                        <li class="burgers__item">
+                            <div class="burgers__content">
+                                <div class="burgers__img">
+                                    <img src="./images/3-burgers/b1.png" alt="сэндвич" class="burgers__img-pic">
+                                </div>
+                                <div class="burgers__data">
+                                    <div class="section-title section-title_color_white burgers__title">Dark BEEF Burger</div>
+                                    <div class="burgers__description">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско.</div>
+                                    <div class="burgers__price-and-order">
+                                        <div class="burgers__price">
+                                            <span class="section-title section-title_color_red burgers__price-span">500</span>рублей</div>
+                                        <a href="#" class="burgers__button button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="burgers__consist">
+                                <div class="burgers__consist-img"></div>
+                                <div class="burgers__consist-text">состав</div>
+                                <ul class="burgers__consist-list">
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/meat.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Говядина</div>
+                                        <div class="burgers__consist-weight">300 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/buns.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Булочки</div>
+                                        <div class="burgers__consist-weight">100 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/salad.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Зелень</div>
+                                        <div class="burgers__consist-weight">70 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/sauce.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Соус</div>
+                                        <div class="burgers__consist-weight">150 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cucumber.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Овощи</div>
+                                        <div class="burgers__consist-weight">200 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cheese.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Сыр</div>
+                                        <div class="burgers__consist-weight">800 г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="burgers__ccal">
+                                <div class="burgers__ccal-text burgers__ccal-text--1">1200</div>
+                                <div class="burgers__ccal-text burgers__ccal-text--2">ккал</div>
+                            </div>
+                        </li>
+                        <li class="burgers__item">
+                            <div class="burgers__content">
+                                <div class="burgers__img">
+                                    <img src="./images/3-burgers/b1.png" alt="сэндвич" class="burgers__img-pic">
+                                </div>
+                                <div class="burgers__data">
+                                    <div class="section-title section-title_color_white burgers__title">Dark BEEF Burger</div>
+                                    <div class="burgers__description">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско.</div>
+                                    <div class="burgers__price-and-order">
+                                        <div class="burgers__price">
+                                            <span class="section-title section-title_color_red burgers__price-span">500</span>рублей</div>
+                                        <a href="#" class="burgers__button button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="burgers__consist">
+                                <div class="burgers__consist-img"></div>
+                                <div class="burgers__consist-text">состав</div>
+                                <ul class="burgers__consist-list">
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/meat.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Говядина</div>
+                                        <div class="burgers__consist-weight">300 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/buns.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Булочки</div>
+                                        <div class="burgers__consist-weight">100 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/salad.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Зелень</div>
+                                        <div class="burgers__consist-weight">70 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/sauce.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Соус</div>
+                                        <div class="burgers__consist-weight">150 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cucumber.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Овощи</div>
+                                        <div class="burgers__consist-weight">200 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cheese.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Сыр</div>
+                                        <div class="burgers__consist-weight">800 г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="burgers__ccal">
+                                <div class="burgers__ccal-text burgers__ccal-text--1">1200</div>
+                                <div class="burgers__ccal-text burgers__ccal-text--2">ккал</div>
+                            </div>
+                        </li>
+                        <li class="burgers__item">
+                            <div class="burgers__content">
+                                <div class="burgers__img">
+                                    <img src="./images/3-burgers/b1.png" alt="сэндвич" class="burgers__img-pic">
+                                </div>
+                                <div class="burgers__data">
+                                    <div class="section-title section-title_color_white burgers__title">Dark BEEF Burger</div>
+                                    <div class="burgers__description">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско.</div>
+                                    <div class="burgers__price-and-order">
+                                        <div class="burgers__price">
+                                            <span class="section-title section-title_color_red burgers__price-span">500</span>рублей</div>
+                                        <a href="#" class="burgers__button button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="burgers__consist">
+                                <div class="burgers__consist-img"></div>
+                                <div class="burgers__consist-text">состав</div>
+                                <ul class="burgers__consist-list">
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/meat.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Говядина</div>
+                                        <div class="burgers__consist-weight">300 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/buns.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Булочки</div>
+                                        <div class="burgers__consist-weight">100 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/salad.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Зелень</div>
+                                        <div class="burgers__consist-weight">70 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/sauce.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Соус</div>
+                                        <div class="burgers__consist-weight">150 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cucumber.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Овощи</div>
+                                        <div class="burgers__consist-weight">200 г</div>
+                                    </li>
+                                    <li class="burgers__consist-item">
+                                        <div class="burgers__consist-pic">
+                                            <img src="./images/3-burgers/cheese.png" alt="ингридиенты" class="burgers__consist-pic-img">
+                                        </div>
+                                        <div class="burgers__consist-name">Сыр</div>
+                                        <div class="burgers__consist-weight">800 г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="burgers__ccal">
+                                <div class="burgers__ccal-text burgers__ccal-text--1">1200</div>
+                                <div class="burgers__ccal-text burgers__ccal-text--2">ккал</div>
                             </div>
                         </li>
                     </ul>
 
                 </div>
                 <div class="burgers-controls">
-                    <a href="#" class="burgers-controls__link burgers-controls__right">
+                    <a href="" class="burgers-controls__link burgers-controls__right burgers-controls_next">
                         <img src="./images/right.png" alt="" class="burgers-controls__img">
                     </a>
                 </div>
@@ -694,40 +954,9 @@
             <a href="#" class="navbar__link"></a>
         </li>
     </ul>
-    <div class="mobile-menu">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-                <a href="#we" class="mobile-menu__link">
-                    о нас
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#burgers" class="mobile-menu__link">
-                    бургеры
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#team" class="mobile-menu__link">
-                    команда
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#menu" class="mobile-menu__link">
-                    меню
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#reviews" class="mobile-menu__link">
-                    отзывы
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#contacts" class="mobile-menu__link">
-                    контакты
-                </a>
-            </li>
-        </ul>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

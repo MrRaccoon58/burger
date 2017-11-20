@@ -1,14 +1,20 @@
 .mobile-menu {
-    @include tablets {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: .3s;
-        background-color: rgba($dark, .9);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 9999px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s;
+    background-color: rgba($dark, .9);
+    z-index: 10;
+    &_position_active {
+        left: initial;
+    }
+    &_opacity {
+        opacity: 1;
     }
 }
 
@@ -16,7 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .mobile-menu__item {
@@ -24,8 +29,11 @@
     flex-direction: column;
     align-items: center;
     font-size: rem(24px);
+    text-transform: uppercase;
     &:hover {
-        text-decoration: underline;
+        .mobile-menu__link {
+            color: $red;
+        }
     }
     &:after {
         @include circle(rem(6px), $white);
@@ -36,30 +44,33 @@
     }
 }
 
-.mobile-hamburger__bars {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
+.mobile-menu__link {
+    transition: .3s;
 }
-.mobile-hamburger__bar {
-    display: inline-block;
-    background-color: $white;
+
+.mobile-menu__close {
+    display: block;
+    position: absolute;
+    top: rem(26px);
+    right: rem(67px);
+    height: 30px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-menu__cross {
     width: 100%;
     height: rem(5px);
+    background-color: $orange;
     border-radius: rem(5px);
-    position: relative;
 }
 
-.mobile-hamburger__bar--1 {
-    transform: rotate(45deg) translate(30%, 140%);
+.mobile-menu__cross-1 {
+    transform: rotate(45deg) translate(50%, -100%);
 }
 
-.mobile-hamburger__bar--2 {
-    transform: rotate(-45deg) translate(30%, -140%);
+.mobile-menu__cross-2 {
+    transform: rotate(-45deg) translate(-56%, -130%);
 }
