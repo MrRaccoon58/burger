@@ -31,7 +31,7 @@ $(function() {//OPS
  });
   $('.link-7').click(function (e) { 
        e.preventDefault();
-       $('.maincontent').moveTo(8);
+       $('.maincontent').moveTo(7);
  });
   $('.link-8').click(function (e) { 
        e.preventDefault();
