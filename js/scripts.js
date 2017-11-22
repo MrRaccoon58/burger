@@ -51,24 +51,30 @@ $(function() {//модалки в ревью
 
 
 //слайдер
-$(function () {
-  let owl = $('.owl-carousel');
-  owl.owlCarousel({
-    items: 1,
-    loop: true,
-    center: true
-  });
+$(window).on('load',function() {
+      
+    let owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      loop: true, 
+      nav: true
+    });
+  
+    $('.burgers-list').click(function (e) {
+      e.preventDefault();
+      owl.trigger('next.owl.carousel', [300]);
+    });
+  
+    $('.burgers-controls_prev').click(function (e) {
+      e.preventDefault();
+      owl.trigger('prev.owl.carousel', [300]);
+    });
 
-  $('.burgers-controls_next').click(function (e) {
-    e.preventDefault();
-    owl.trigger('next.owl.carousel', [300]);
-  });
 
-  $('.burgers-controls_prev').click(function (e) {
-    e.preventDefault();
-    owl.trigger('prev.owl.carousel', [300]);
-  });
+
+  
 });
+
 
 
 //аккордеон секции команда
