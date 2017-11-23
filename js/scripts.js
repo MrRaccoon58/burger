@@ -1,7 +1,10 @@
 /*jshint esversion: 6 */
 
 $(function() {//OPS
-  $('.maincontent').onepage_scroll();
+  $('.maincontent').onepage_scroll({
+    loop: false,
+    animationTime: 500
+  });
   $('.link-2').click(function (e) { 
        e.preventDefault();
        $('.maincontent').moveTo(2);
