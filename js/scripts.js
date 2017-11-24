@@ -1,81 +1,154 @@
 /*jshint esversion: 6 */
 
-$(function() {//OPS
+$(function () { //OPS
   $('.maincontent').onepage_scroll({
     loop: false,
     animationTime: 500
   });
-  $('.link-2').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(2);
- });
-  $('.link-3').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(3);
- });
-  $('.link-4').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(4);
- });
-  $('.link-5').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(5);
- });
-  $('.link-6').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(6);
- });
-  $('.link-7').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(7);
- });
-  $('.link-8').click(function (e) { 
-       e.preventDefault();
-       $('.maincontent').moveTo(8);
- });
- });
 
-
-$(function() {//модалки в ревью
- $('.review__button').click(function (e) { 
+  function ops(link, moveto) {
+    $(link).click(function (e) {
       e.preventDefault();
-      const modalScroll = $("body");
-      modalScroll.disablescroll();
-          let $this = e.currentTarget;
-          let thisText = $(this).prev('.review__text');
-          let text = thisText.text();
-          swal(text, {button: 'закрыть'}).then((value) => {
-            modalScroll.disablescroll("undo");
-          });
-});
+      $('.maincontent').moveTo(moveto);
+    });
+  }
+  ops('.link-2',2);
+  ops('.link-3',3);
+  ops('.link-4',4);
+  ops('.link-5',5);
+  ops('.link-6',6);
+  ops('.link-7',7);
+  ops('.link-8',8);
 
 });
+
+
+$(function () { //модалки в ревью
+  $('.review__button').click(function (e) {
+    e.preventDefault();
+    const modalScroll = $("body");
+    modalScroll.disablescroll();
+    let $this = e.currentTarget;
+    let thisText = $(this).prev('.review__text');
+    let text = thisText.text();
+    swal(text, {
+      button: 'закрыть'
+    }).then((value) => {
+      modalScroll.disablescroll("undo");
+    });
+  });
+
+});
+
+//mailto function
+
+// $(function () {
+//   let submitForm = function (e) {
+//     e.preventDefault();
+//     let form = $(e.target);
+
+//     let request = ajaxForm(form);
+
+//     request.done(function (msg) {
+//         let mes = msg.mes,
+//             status = msg.status;
+
+//         if (status === 'OK') {
+//           form.append('<p class="success">' + mes + '</p>');
+//         } else {
+//           form.append('<p class="error">' + mes + '</p>');
+//         }
+//     });
+
+//     request.fail(function (jqXHR, textStatus) {
+//         alert("Ошибка: " + textStatus);
+//     });
+//   }
+
+//   let ajaxForm = function(form) {
+//        let  url = form.attr('action'),
+//             data = form.serialize();
+
+//         return $.ajax({
+//           type: 'POST',
+//           url: url,
+//           data: data,
+//           dataType: 'JSON'
+//         })
+    
+//   }
+
+//   $('#form__burger-order').on('submit', submitForm);
+
+// });
+
+
+var submitForm = function (ev) {
+  ev.preventDefault();
+  var form = $(ev.target);
+      
+  var request = ajaxForm(form);
+
+  request.done(function(msg) {
+      var mes = msg.mes,
+          status = msg.status;
+      if (status === 'OK') {
+          swal(mes, {
+            button: 'закрыть'
+          });
+      } else{
+        swal(mes, {
+          button: 'закрыть'
+        });
+      }
+  });
+
+  request.fail(function(jqXHR, textStatus) {
+      alert("Request failed: " + textStatus);
+  });
+}
+
+var ajaxForm = function (form) {
+
+  var url = form.attr('action'),
+      data = form.serialize();
+
+  return $.ajax({
+      type: 'POST',
+      url: url,
+      data: data,
+      dataType: 'JSON'
+  });
+
+}
+
+$('#form__burger-order').on('submit', submitForm);
 
 
 
 //слайдер
-$(window).on('load',function() {
-      
-    let owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 1,
-      loop: true, 
-      nav: true
-    });
-  
-    $('.burgers-list').click(function (e) {
-      e.preventDefault();
-      owl.trigger('next.owl.carousel', [300]);
-    });
-  
-    $('.burgers-controls_prev').click(function (e) {
-      e.preventDefault();
-      owl.trigger('prev.owl.carousel', [300]);
-    });
+$(window).on('load', function () {
+
+  let owl = $('.owl-carousel');
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true
+  });
+
+  $('.burgers-list').click(function (e) {
+    e.preventDefault();
+    owl.trigger('next.owl.carousel', [300]);
+  });
+
+  $('.burgers-controls_prev').click(function (e) {
+    e.preventDefault();
+    owl.trigger('prev.owl.carousel', [300]);
+  });
 
 
 
-  
+
 });
 
 
@@ -165,9 +238,9 @@ $(function () {
 
 //меню в первой секции
 $(function () {
-  const menuScroll = $("body"); 
+  const menuScroll = $("body");
   $(".hamburger").click(e => {
-     
+
     const $this = e.currentTarget;
     e.preventDefault();
     if (!$(".mobile-menu").hasClass('mobile-menu_position_active')) {

@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <a href="#we" class="arrow">
-                        <svg class="link-2 arrow-img">
+                        <svg class="arrow-img">
                             <use xlink:href="./images/sprite.svg#arrow-scroll"></use>
                         </svg>
                     </a>
@@ -851,68 +851,68 @@
                 <div class="container order__container">
                     <h2 class="order__section-title section-title section-title_position_center">закажите доставку</h2>
 
-                    <form action="/" method="post" class="form__elem">
+                    <form action="script/mail.php" method="post" id="form__burger-order" class="form__elem">
                         <div class="form">
                             <div class="form__content">
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="name" class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="name">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="name">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="phone" class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="phone">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="phone">
                                     </label>
                                 </div>
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="street" class="form__block">
                                         <div class="form__title">Улица</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="street">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="street">
                                     </label>
                                 </div>
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="home" class="form__block">
                                         <div class="form__title">Дом</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="home">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="home">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="housing" class="form__block">
                                         <div class="form__title">Корпус</div>
                                         <input type="text" class="form__input" name="housing">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="apt" class="form__block">
                                         <div class="form__title">Квартира</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="apt">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="apt">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="floor" class="form__block">
                                         <div class="form__title">Этаж</div>
-                                        <input required placeholder="*" type="text" class="form__input" name="floor">
+                                        <input required placeholder="обязательное поле" type="text" class="form__input" name="floor">
                                     </label>
                                 </div>
                             </div>
                             <div class="form__content">
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="name" class="form__block">
                                         <div class="form__title">Комментарий</div>
                                         <textarea name="comment" id="comment" cols="30" rows="5" class="form__input form__textarea"></textarea>
                                     </label>
                                 </div>
                                 <div class="form__row form__row_phones">
-                                    <label class="radio">
-                                        <input class="radio__input" type="radio" value="cash" name="money">
+                                    <label for="cash" class="radio">
+                                        <input id="cash" class="radio__input" type="radio" value="Наличные" name="money">
                                         <div class="radio__title">
                                             Потребуется сдача
                                         </div>
                                     </label>
-                                    <label class="radio">
-                                        <input class="radio__input" type="radio" value="card" name="money">
+                                    <label for="card" class="radio">
+                                        <input id="card" class="radio__input" type="radio" value="Картой" name="money">
                                         <div class="radio__title">
                                             Оплата по карте
                                         </div>
                                     </label>
                                 </div>
                                 <div class="form__row form__row_phones">
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="nocall">
+                                    <label for="nocall" class="checkbox">
+                                        <input id="nocall" class="checkbox__input" type="checkbox" name="nocall">
                                         <div class="checkbox__title">
                                             Не перезванивать
                                         </div>
