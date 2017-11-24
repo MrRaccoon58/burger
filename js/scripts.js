@@ -104,7 +104,9 @@ var submitForm = function (ev) {
   });
 
   request.fail(function(jqXHR, textStatus) {
-      alert("Request failed: " + textStatus);
+    swal("Request failed: " + textStatus, {
+      button: 'закрыть'
+    });
   });
 }
 
