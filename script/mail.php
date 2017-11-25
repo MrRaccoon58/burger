@@ -40,7 +40,7 @@ $headers = "From: Администратор сайта <admin@loftschool.com>\r
 "MIME-Version: 1.0" . "\r\n" .
 "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-$mail = mail('koval@loftschool.com', 'Заказ', $mail_message, $headers);
+$mail = mail('mrraccoon58@gmail.com', 'Заказ', $mailMessage, $headers);
 
 $data = [];
 
