@@ -1,0 +1,19 @@
+{
+  "name": "burgers",
+  "version": "1.0.0",
+  "description": "**Имя**: Лукьянов Евгений",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "jshint": "^2.9.5"
+  }
+}
