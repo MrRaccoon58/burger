@@ -1,4 +1,11 @@
 .we {
     @include bg('we.jpg');
     color: $dark;
+    overflow: hidden;
+}
+
+.we__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
