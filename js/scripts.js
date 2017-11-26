@@ -41,92 +41,52 @@ $(function () { //модалки в ревью
 });
 
 //mailto function
+  $(function () {
 
-// $(function () {
-//   let submitForm = function (e) {
-//     e.preventDefault();
-//     let form = $(e.target);
-
-//     let request = ajaxForm(form);
-
-//     request.done(function (msg) {
-//         let mes = msg.mes,
-//             status = msg.status;
-
-//         if (status === 'OK') {
-//           form.append('<p class="success">' + mes + '</p>');
-//         } else {
-//           form.append('<p class="error">' + mes + '</p>');
-//         }
-//     });
-
-//     request.fail(function (jqXHR, textStatus) {
-//         alert("Ошибка: " + textStatus);
-//     });
-//   }
-
-//   let ajaxForm = function(form) {
-//        let  url = form.attr('action'),
-//             data = form.serialize();
-
-//         return $.ajax({
-//           type: 'POST',
-//           url: url,
-//           data: data,
-//           dataType: 'JSON'
-//         })
-    
-//   }
-
-//   $('#form__burger-order').on('submit', submitForm);
-
-// });
-
-
-var submitForm = function (ev) {
-  ev.preventDefault();
-  var form = $(ev.target);
+    let submitForm = function (e) {
+      e.preventDefault();
+      let form = $(e.target);
+          
+      let ajaxForm = function (form) {
       
-  var request = ajaxForm(form);
-
-  request.done(function(msg) {
-      var mes = msg.mes,
-          status = msg.status;
-      if (status === 'OK') {
-          swal(mes, {
-            button: 'закрыть'
-          });
-      } else{
-        swal(mes, {
+        let url = form.attr('action'),
+            data = form.serialize();
+      
+        return $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            dataType: 'JSON'
+        });
+      
+      }
+      let request = ajaxForm(form);
+    
+      request.done(function(msg) {
+          let mes = msg.mes,
+              status = msg.status;
+          if (status === 'OK') {
+              swal(mes, {
+                button: 'закрыть'
+              });
+          } else{
+            swal(mes, {
+              button: 'закрыть'
+            });
+          }
+      });
+    
+      request.fail(function(jqXHR, textStatus) {
+        swal("Request failed: " + textStatus, {
           button: 'закрыть'
         });
-      }
+      });
+    }
+    
+    
+    $('#form__burger-order').on('submit', submitForm);
+  
   });
-
-  request.fail(function(jqXHR, textStatus) {
-    swal("Request failed: " + textStatus, {
-      button: 'закрыть'
-    });
-  });
-}
-
-var ajaxForm = function (form) {
-
-  var url = form.attr('action'),
-      data = form.serialize();
-
-  return $.ajax({
-      type: 'POST',
-      url: url,
-      data: data,
-      dataType: 'JSON'
-  });
-
-}
-
-$('#form__burger-order').on('submit', submitForm);
-
-
 
 //слайдер
 $(window).on('load', function () {

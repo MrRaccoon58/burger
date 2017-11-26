@@ -42,7 +42,7 @@ $headers = "From: Администратор сайта <admin@loftschool.com>\r
 
 $mail = mail('mrraccoon58@gmail.com', 'Заказ', $mailMessage, $headers);
 
-$data = [];
+$data;
 
 if ($mail) {
     $data['status'] = "OK";
@@ -50,45 +50,8 @@ if ($mail) {
 }else{
     $data['status'] = "NO";
     $data['mes'] = "На сервере произошла ошибка";
-}
+};
 
 echo json_encode($data);
-
-
-
-
-
-
-
-
-
-
-
-
-// $headers = "From: Администратор сайта <admin@loftschool.com>\r\n".
-// "MIME-Version: 1.0" . "\r\n" .
-// "Content-type: text/html; charset=UTF-8" . "\r\n";
-
-// $mail = mail('mrraccoon58@gmail.com', 'Заказ', $mailMessage, $headers);
-
-// if  ($mail) {
-//     echo 'done';
-// }else{
-//     echo 'err';
-// }
-
-
-
-// $data = [];
-
-// if ($mail) {
-//     $data['status'] = "OK";
-//     $data['mes'] = "Ваш заказ принят в обработку";
-// }else {
-//     $data['status'] = "NO";
-//     $data['mes'] = "Что-то пошло не так"];
-// }
-
-// echo json_encode($data);
 
 ?>
